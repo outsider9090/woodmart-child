@@ -1,0 +1,407 @@
+/*
+Theme Name: Woodmart Child
+Template: woodmart
+*/
+
+@font-face{ font-family: 'vazir'; src:url('fonts/vazir.eot?#') format('eot'), url('fonts/vazir.woff') format('woff'), url('fonts/vazir.ttf') format('truetype');}
+@font-face{ font-family: 'yekan'; src:url('fonts/yekan.eot?#') format('eot'), url('fonts/yekan.woff') format('woff'), url('fonts/yekan.ttf') format('truetype');}
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/IRANSansWeb(FaNum).eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/yekan/iranyekanwebbold.eot');
+	src: url('fonts/yekan/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/yekan/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/iranyekanwebbold.ttf') format('truetype');
+}
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/yekan/iranyekanweblight.eot');
+	src: url('fonts/yekan/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/yekan/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/iranyekanweblight.ttf') format('truetype');
+}
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/yekan/iranyekanwebregular.eot');
+	src: url('fonts/yekan/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/yekan/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/iranyekanwebregular.ttf') format('truetype');
+}
+
+/**********************************************/
+@font-face {
+	font-family: Sahel;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/sahel/Sahel-Bold.eot');
+	src: url('fonts/sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/sahel/Sahel-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/sahel/Sahel-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/sahel/Sahel-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: Sahel;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/sahel/Sahel-Black.eot');
+	src: url('fonts/sahel/Sahel-Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/sahel/Sahel-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/sahel/Sahel-Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/sahel/Sahel-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: Sahel;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/sahel/Sahel.eot');
+	src: url('fonts/sahel/Sahel.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/sahel/Sahel.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/sahel/Sahel.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/sahel/Sahel.ttf') format('truetype');
+}
+
+
+label {
+    text-align: right;
+}
+
+.tp-tab.selected .tp-tab-title,.tp-tab-title:hover { background-color: #fff !important; } .tp-tab.selected .tp-tab-title:before,.tp-tab-title:hover:before { content: ''; width: 18px; height: 18px; transform: rotate(45deg); background-color: #fff; top: -7px; position: absolute; border-radius: 3px; left: 50%; overflow: visible; margin-left: -9px;}
+
+input[type=text], input[type=email], input[type=password], input[type=search], input[type=number], input[type=url], input[type=tel], input[type=date], select, textarea {
+    background: #fff;
+}
+.box-icon-align-top .box-icon-wrapper {
+    margin-bottom: 0px;
+}
+.menu-simple-dropdown .sub-menu-dropdown, .menu-simple-dropdown .sub-sub-menu {
+    width: 250px;
+}
+.woodmart-products-tabs.tabs-design-simple .owl-nav, .woodmart-products-tabs.tabs-design-simple .wrap-loading-arrow {
+    right: auto;
+	left: 0;
+}
+.woodmart-products-tabs .tabs-name {
+	font-weight:400;
+}
+.blog-design-masonry .entry-title {
+    font-size: 16px;
+}
+.post-single-page .article-body-container {
+    text-align: right;
+}
+.post-single-page .entry-title {
+    font-size: 22px;
+}
+.mega-menu-list .sub-sub-menu li a, .menu-mega-dropdown .sub-sub-menu li a {
+    padding: 5px 0;
+}
+.title-size-default .entry-title {
+    font-size: 34px;
+}
+.product-image-summary .entry-title {
+    font-size: 22px;
+}
+.tabs-layout-tabs .tabs {
+    text-align: right;
+}
+.popup-added_to_cart h4 {
+    font-size: 18px;
+}
+.icons-design-colored .social-instagram {
+    background-color: #ef5a88;
+}
+
+.woodmart-sidebar-content .widget {
+	padding: 20px;
+	box-shadow: 0 1px 1px 1px #e6e6e6;
+}
+.woodmart-sidebar-content .widget-title {
+	background: rgba(125, 125, 125, 0.15);
+    padding: 10px 20px;
+}
+
+.woodmart-navigation .item-level-0>a {
+    letter-spacing: 0px;
+}
+
+.added_to_cart, .btn, .button, [type=button], [type=submit], button {
+    letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+.woodmart-products-tabs.tabs-design-simple .owl-carousel .owl-nav {
+    left: -5px;
+	right:auto;
+}
+}
+
+.tabs-layout-tabs .tabs li a {
+    width: 100px;
+    text-align: center;
+}
+
+.tabs-layout-tabs .tabs li a:after {
+    top: 100%;
+    bottom: 0;
+}
+#tab-additional_information .shop_attributes td {
+    text-align: right;
+}
+.tabs-layout-tabs #tab-additional_information .shop_attributes {
+    max-width: 850px;
+}
+.woocommerce-order-pay .entry-content>.woocommerce {
+    max-width: 850px;
+    margin: 0 auto;
+}
+ul.order_details li {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px dashed #c7c7c7;
+	margin-bottom: 15px;
+}
+ul.order_details li:last-child {
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: 0px dashed #c7c7c7;
+}
+.woocommerce-order-pay .entry-content>.woocommerce:after, .woocommerce-order-pay .entry-content>.woocommerce:before {
+    background-image: radial-gradient(farthest-side,rgba(0,0,0,0) 6px,#f9f9f9 0);
+}
+.checkout-order-review, .woocommerce-order-pay .entry-content>.woocommerce {
+    background-color: #f9f9f9;
+}
+.woodmart-prefooter {
+    padding-bottom: 0px;
+}
+.woodmart-slide-inner {
+    max-width: 100% !important;
+}
+
+.post-slide .entry-title {
+    font-size: 14px !important;
+	font-weight:600;
+}
+.tp-tab-title { padding: 19px 10px !important; font-family: 'iranyekan' !important; font-weight: normal !important; background: rgba(66,73,89,.8) !important;} .tp-tab-mask {overflow:visible !important; } .tp-tab.selected .tp-tab-title,.tp-tab-title:hover { background-color: #fff !important; } .tp-tab.selected .tp-tab-title:before,.tp-tab-title:hover:before { content: ''; width: 18px; height: 18px; transform: rotate(45deg); background-color: #fff; top: -7px; position: absolute; border-radius: 3px; left: 50%; overflow: visible; margin-left: -9px;}
+
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+
+.blog-design-default.has-post-thumbnail .article-body-container {
+    margin-top: 0px;
+	width: 100%;
+    height: 100%;
+}
+
+.article-inner {
+    border: 1px solid;
+	border-color: #ddd;
+	background: #fff;
+}
+
+.woocommerce-my-account-wrapper{
+    border: 1px solid;
+	border-color: #ddd;
+	background: #fff;
+	padding: 25px;
+}
+
+.um {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid;
+	border-color: #ddd;
+}
+
+.blog-post-loop .article-body-container {
+    padding: 25px 10px 25px 10px;
+    text-align: right;
+}
+
+.blog-design-default .article-body-container {
+    margin-right: 0px; 
+}
+
+.woodmart-sidebar-content .widget {
+	background-color: #fff;
+}
+
+.woodmart-entry-content {
+    margin: 15px;
+}
+
+.comment-list {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #ddd;
+    padding: 0px 10px 0px 25px;
+}
+
+.woodmart-single-footer .tags-list a {
+	background-color: #ccc;
+}
+
+.meta-post-categories {
+	background-color: #89C4F4;
+}
+
+.woodmart-load-more {
+    color: #f50057;	
+	border-color: #f50057;
+}
+
+.woodmart-load-more:hover {
+    color: #000;	
+	border-color: #f50057;
+}
+
+.author-info {
+    background-color: #c0e0c3;
+}
+
+.comments-area .comment-respond{margin-bottom:30px;background-color: #fff;padding: 20px;border: 1px solid #C9C9C9;border-radius: 10px;}
+li.comment{border-radius: 10px;background-color: #fff; margin-bottom: 15px;padding: 44px;}
+.comment-list{background-color: rgba(255,255,255,0) !important;border:0 !important;border-color:none !important;padding: 0 !important;} 
+div#comments>ol>li{border: 1px solid #C9C9C9;padding-top: 30px;padding-bottom: 30px;}
+.comments-area .comment{padding-top: 13px;padding-bottom: 13px;border-bottom:0;}
+.comments-area .comment-body{padding-right: 65px;padding-left: 25px;}
+.comments-area .children{border-top:0;margin-top: 10px;margin-top: 0px;}    
+div.comment-body{background-color: #fff;padding: 10px;border: 1px solid #C9C9C9;border-radius: 15px;}
+li.comment.depth-1>div.comment-body{background-color: #F1F1F1;}
+.comments-area .comment-author img{ border: 2px solid #C9C9C9;background-color: #fff;top: 13px;right: -34px;}
+p{text-align:justify;}
+div#comments>ol>li.pingback{border: 0;}
+.comments-area .pingback .comment-body{padding: 12px;border-radius: 7px;}
+.comments-area .children .comment:last-child{padding-left: 0px;}
+ol.children>li.comment.parent{padding-left: 0px;margin-bottom: 0px;}
+ol.children>li.comment.odd{padding-left: 0px;margin-bottom:0;padding-bottom: 0px;}
+ol.children>li.comment.even{margin-bottom:0;padding-bottom: 0px;}
+.single-post-navigation{margin-bottom: 39px;background-color: #fff;border-radius: 10px;border: 1px solid #cdcdcd;padding: 25px 10px;}
+.woodmart-single-footer .tags-list a{font-weight: normal;padding-left: 12px;padding-right: 12px;min-width: auto;color: #5f5f5f;background-color: #fff !important;margin-left: 1px;margin-top: 2px;margin-bottom: 2px;border: 1px solid #d4d4d4;font-size: 11px;line-height: 20px;border-radius: 33px;}
+div.tags-list{margin-bottom:25px;}
+.woodmart-single-footer .tags-list a:hover{color: #e5490a;}
+.woodmart-single-footer{display: -webkit-inline-box;}
+.woodmart-single-footer .tags-list a:after{width: 0;height: 0;}
+.related-posts-slider{margin-bottom: 20px;}
+.woodmart-carousel-spacing-20{margin-right: 0px;margin-left: 0px;background-color: #fff;padding: 20px 20px 0px 20px;border: 1px solid #cdcdcd;border-radius: 10px;}
+.blog-design-masonry.blog-style-shadow .article-inner{box-shadow:none;border-radius:5px;}
+.post-img-wrapp{border-top-right-radius: 5px;border-top-left-radius: 5px;}
+.blog-design-masonry.blog-style-shadow .article-body-container{border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.woodmart-post-date{color: #e5490a;border-radius: 5px;background-color: rgba(255,255,255,0.8);}
+.woodmart-social-icons{float: left;}
+div.entry-content>div>.woodmart-social-icons::before{content: 'به اشتراک بگذارید';font-size: 14px;padding: 4px 12px;font-weight: 700;border-radius: 30px;vertical-align: -5px;margin-left: 13px;background-color: #dd370809;border: 1px solid #dd3708;color: #dd3708;}
+div.article-inner>.woodmart-entry-meta>.entry-meta-list li a{color: #dd3708;}
+div.article-inner>.woodmart-entry-meta>.entry-meta-list li{color: #dd3708;}
+div.article-inner>.woodmart-entry-meta{border: 1px solid #dd3708;border-radius: 15px;padding: 4px 20px;background-color: #dd370809;}
+footer.entry-author .author-info{margin-bottom: 0px!important;border-bottom-right-radius: 10px !important;border-bottom-left-radius: 10px !important;}
+.woodmart-single-footer{border-top:0px;}
+.article-inner{border-radius: 10px;}
+.author-info .avatar{max-width: 100px !important;border: 3px solid #dd370850 !important;}
+.author-info {background-color: #e5490a10 !important;border: 2px solid !important;border-radius: 10px !important;border-color: #dd370830 !important;}
+.woodmart-sidebar-content .widget{border-radius: 6px;border: 1px solid #dcdcdc;}
+.intban{border-radius: 10px;box-shadow: 10px 10px 10px rgba(0,0,0,.18);}
+article.blog-post-loop>.article-inner{background-color:transparent !important;border:1px solid #e5e5e5 !important;}
+.woodmart-load-more{color: #e5490a !important;border-color: #e5490a !important;border-radius:10px !important;transition: border-radius 0.8s !important;}
+.woodmart-load-more:hover{color: #fff !important;background-color: #e5490a !important;border-radius:0px !important;}
+.intban1{border-radius: 10px !important;box-shadow:10px 10px 10px rgba(0,0,0,.18) !important;transition: all ease-in-out 300ms !important;}
+.intban1:hover{transform: translate(0,-10px) !important;}
+.tg-layout-justified .lome .tg-item-title, .tg-layout-justified .lome .tg-item-title a{font-size: 16px !important;line-height: 30px !important;}
+.tg-layout-justified .lome .tg-item-date{display: none;}    
+.tg-item .tg-center-holder{top: 87%;}
+.lome .tg-center-holder{text-align: right !important;}
+.side1{background-color:#fff;padding:10px 15px;border:1px solid #dcdcdc;border-radius:5px;}
+.widget-title{background: rgba(125, 125, 125, 0.15);padding: 10px 20px;}
+div#categories-11{max-width:100% !important;padding-right: 0px;padding-left:0px;}
+.cute-article .post-date {display: none;}
+.cute-article .entry-meta {display: none;}
+.cute-article .hovered-social-icons {display: none;}
+.cute-article .article-body-container {height: 100%;display: flex;flex-direction: column-reverse;background-color: rgb(0,0,0,0.2) !important;}
+.slider-type-post{margin-bottom: 5px !important;}
+div.slide-post.owl-carousel-item>article>div.article-inner>div>h3>a{padding-top:0px;padding-bottom: 43px !important;}
+div.link1>div>div>div>div>div.owl-stage-outer>div.owl-stage>div>div.slide-post.owl-carousel-item>article>div.article-inner>div>h3>a{padding-top:150px !important;padding-bottom: 30px !important;}
+div.slide-post.owl-carousel-item>article>div.article-inner>div>h3{margin-bottom: -34px !important;}
+article.blog-design-small-images>div.article-inner{border: 0 !important;}
+article.blog-design-small-images>div.article-inner>header>figure>div>a>img{height: 286px;}
+article.blog-design-small-images>div.article-inner>div.article-body-container>h3{font-size: 14px !important;line-height: 26px;}
+article.blog-design-small-images>div.article-inner>div.article-body-container{height: 282px;}
+.article-inner {border: 1px solid;border-color: #ddd;background: #fff;border-radius: 10px;}
+.woodmart-sidebar-content .widget{background-color: #fff;padding: 20px;box-shadow: 0 1px 1px 1px #e6e6e6;}
+.woodmart-entry-content{margin: 15px;}
+.comments-area .comment-body{word-break: break-word;}
+
+.mihanpanel-profile-widget .mp-nav-tabs-mpwrapper .mp-nav-tabs li a i {float: right;font-size: 1.5em;padding-left: 15px;}
+.mihanpanelpanel .mpsidebar .nav i {float: right;margin-left: 15px;}
