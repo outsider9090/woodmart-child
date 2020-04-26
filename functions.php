@@ -24,7 +24,6 @@ add_action( 'wp_enqueue_scripts', 'load_scripts_styles' );
 
 
 
-
 function post_like_table_create() {
 	global $wpdb;
 	$table_name = $wpdb->prefix. "post_like_table";
@@ -75,7 +74,6 @@ function my_action_callback() {
 		die();
 	}
 
-
 	$row1 = $wpdb->get_results( "SELECT id FROM $wpdb->post_like_table WHERE postid = '$postid' AND userid = '$user_id'");
 	if ( empty($row1)){
 		$wpdb->insert( $wpdb->post_like_table, array( 'postid' => $postid, 'userid' => $user_id ), array( '%d', '%s' ) );
@@ -86,8 +84,12 @@ function my_action_callback() {
 	}
 
 
+
 	$totalrow1 = $wpdb->get_results( "SELECT id FROM $wpdb->post_like_table WHERE postid = '$postid'");
 	$total_like=$wpdb->num_rows;
+
+	update_post_meta( $postid, 'likes_count', $total_like , '' );
+
 
 	$data=array( 'postid'=>$postid,'likecount'=>$total_like,'userid'=>$user_id, 'is_loggedin'=> $is_loggedin, 'is_liked'=> $liked);
 	echo json_encode($data);

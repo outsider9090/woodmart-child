@@ -1,10 +1,10 @@
 <?php
 
 /* Variables */
-$excerptLength = 45;         //  (کلمه) طول خلاصه مطلب
 $paged_type = 'paged';         // "page" in local AND "paged" in Host
-$posts_per_page = 50;        // تعداد پست های صفحه اصلی
-$loginUrl = 'https://sisoog.com/login/';      // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
+$excerptLength = get_option('ztools_excerptLen','');  //  (کلمه) طول خلاصه مطلب
+$posts_per_page = get_option('ztools_planet_postPP',''); // تعداد پست های صفحه اصلی
+$loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
 /* Variables */
 
 
@@ -164,7 +164,6 @@ function wp_bootstrap4_pagination( $args = array() , $paged_type , $posts_per_pa
 							$total_like = $wpdb->num_rows;
 
 							$user_liked = $wpdb->get_results( "SELECT userid FROM $wpdb->post_like_table WHERE postid = '$postid'");
-
 							?>
 
                             <span style="display: none;"><?php
