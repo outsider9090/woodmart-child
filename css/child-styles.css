@@ -745,6 +745,86 @@ form input{
 }
 
 
+.post-share{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+}
+.shorturl-input {
+    position: relative;
+    background: whitesmoke;
+    border: 1px solid #bdbdbd;
+    border-radius: 50px;
+    padding: 0 14px;
+    line-height: 40px;
+    margin: 8px;
+}
+.shorturl-input i{
+    color: #363636;
+}
+.shortUrl-text{
+    color: #363636;
+}
+
+#shorturl-msg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.8;
+    border-radius: 50px;
+    min-width: 80px;
+    color: #eee;
+    text-align: center;
+    font-family: vazir, sans-serif, Arial, Helvetica !important;
+    display: none;
+}
+
+
+/* improve fonts ui */
+.post.blog-post-loop .entry-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 35px;
+    color: #363636;
+}
+.post-single-page .entry-title {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 2;
+    color: #363636;
+}
+.post-single-page .entry-content {
+    margin-bottom: 60px;
+    color: #4a4a4a;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+blog-design-default .woodmart-entry-content {
+    color: #858585;
+    line-height: 1.8;
+    font-size: 0.9em;
+}
+@media screen and (max-width: 768px) {
+    .post-single-page .entry-content {
+        margin-bottom: 60px;
+        color: #4a4a4a;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .post-single-page .entry-title {
+        font-size: 1.2em;
+        line-height: 2.5rem;
+    }
+}
+/* improve fonts ui */
+
+
 /*----------------------------Media Queries----------------------------*/
 
 @media screen and (max-width: 1200px) {

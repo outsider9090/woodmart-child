@@ -8,6 +8,9 @@ $content_class = woodmart_get_content_class();
 ?>
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <div class="site-content <?php echo esc_attr( $content_class ); ?>" role="main">
 
 	<?php /* The loop */ ?>
@@ -15,7 +18,27 @@ $content_class = woodmart_get_content_class();
 
 		<?php get_template_part( 'content', get_post_format() ); ?>
 
+
         <div class="publish">
+            <div class="woodmart-single-footer" style="width: 100%;">
+                <div class="post-share">
+	                <?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
+                        <div class="single-post-social">
+			                <?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored')) ?>
+                        </div>
+	                <?php endif ?>
+                    <div data-action="copy" class="shorturl-input">
+                        <a onclick="myFunction()" style="cursor: pointer;">
+                            <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>
+                            <i class="fa fa-copy fa-lg"></i>
+                        </a>
+                        <input type ="hidden" value="<?php echo  wp_get_shortlink( 0, 'post', true ); ?>" id="short_link" >
+                        <span id="shorturl-msg">کپی شد</span>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 support">
@@ -47,19 +70,15 @@ $content_class = woodmart_get_content_class();
             </div>
         </div>
 
-
-        <div class="woodmart-single-footer"><?php if( get_the_tag_list( '', ', ' ) ): ?>
+        <div class="woodmart-single-footer">
+			<?php if( get_the_tag_list( '', ', ' ) ): ?>
                 <div class="single-meta-tags">
                     <span class="tags-title"><?php esc_html_e('Tags', 'woodmart'); ?>:</span>
                     <div class="tags-list">
 						<?php echo get_the_tag_list( '', ', ' ); ?>
                     </div>
                 </div>
-			<?php endif; ?><?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
-                <div class="single-post-social">
-					<?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored')) ?>
-                </div>
-			<?php endif ?>
+			<?php endif; ?>
         </div>
 
 
@@ -91,3 +110,24 @@ $content_class = woodmart_get_content_class();
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+    function copyStringToClipboard (str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+    function myFunction() {
+        var copyText = document.getElementById("short_link");
+        copyStringToClipboard(copyText.value);
+        document.getElementById('shorturl-msg').style.display = "block";
+        setTimeout(function() {
+            document.getElementById('shorturl-msg').style.display = "none";
+        }, 2000);
+    }
+</script>

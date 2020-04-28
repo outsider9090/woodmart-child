@@ -5,7 +5,7 @@ defined("ABSPATH") || exit();
 function load_scripts_styles() {
 	// Styles
 	$parent_style = 'parent-style';
-	wp_enqueue_style( $parent_style , get_stylesheet_directory_uri() . '/css/child-styles.css' );
+	wp_enqueue_style( $parent_style , get_stylesheet_directory_uri() . '/css/child-styles.css');
 	wp_enqueue_style( 'toastnotify', get_stylesheet_directory_uri() . '/css/toastnotify.min.css', array( $parent_style ));
 	wp_enqueue_style( $parent_style, get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
 	// Scripts
@@ -20,7 +20,7 @@ function load_scripts_styles() {
 		'security' => wp_create_nonce( 'my-special-string' )
 	));
 }
-add_action( 'wp_enqueue_scripts', 'load_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'load_scripts_styles');
 
 
 
@@ -192,11 +192,15 @@ function logout_cookie() {
 }
 
 
-
 // Show Planets List Short code
 add_shortcode('show_planet_list', 'planet_list');
 function planet_list($attr , $content = null){
 	require_once( get_template_directory() . '/../woodmart-child/includes/planets_list.php' );
 }
+
+add_filter( 'allowed_redirect_hosts', function(){
+	$hosts[] = 'http://192.168.30.99/auth/public/admin/dashboard/';
+	return $hosts;
+});
 
 ?>

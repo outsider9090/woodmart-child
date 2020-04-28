@@ -405,3 +405,14 @@ article.blog-design-small-images>div.article-inner>div.article-body-container{he
 
 .mihanpanel-profile-widget .mp-nav-tabs-mpwrapper .mp-nav-tabs li a i {float: right;font-size: 1.5em;padding-left: 15px;}
 .mihanpanelpanel .mpsidebar .nav i {float: right;margin-left: 15px;}
+
+
+/* Extra styles */
+.woodmart-social-icons {
+	float: none;
+	margin: 12px auto;
+}
+
+.woodmart-single-footer .single-post-social{
+	flex: none;
+}
