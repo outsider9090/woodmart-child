@@ -8,7 +8,7 @@ $content_class = woodmart_get_content_class();
 ?>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 
 <div class="site-content <?php echo esc_attr( $content_class ); ?>" role="main">
@@ -18,27 +18,27 @@ $content_class = woodmart_get_content_class();
 		<?php get_template_part( 'content', get_post_format() ); ?>
 
         <div class="publish">
-            <!--            <div class="post-share-container">-->
-            <div class="woodmart-single-footer" style="width: 100%;">
-                <div class="post-share">
-					<?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
-                        <div class="single-post-social">
-							<?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(
-							        array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
-                            ?>
+            <div class="post-share-container">
+                <div class="woodmart-single-footer" style="width: 100%;">
+                    <div class="post-share">
+						<?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
+                            <div class="single-post-social">
+								<?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(
+									array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
+								?>
+                            </div>
+						<?php endif ?>
+                        <div data-action="copy" class="shorturl-input">
+                            <a onclick="myFunction()" class="woodmart-tooltip" data-original-title="لینک کوتاه" title="لینک کوتاه" style="cursor: pointer;" >
+                                <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>
+                                <i class="fa fa-copy fa-lg"></i>
+                            </a>
+                            <input type ="hidden" value="<?php echo  wp_get_shortlink( 0, 'post', true ); ?>" id="short_link" >
+                            <span id="shorturl-msg">کپی شد</span>
                         </div>
-					<?php endif ?>
-                    <div data-action="copy" class="shorturl-input">
-                        <a onclick="myFunction()" class="woodmart-tooltip" data-original-title="لینک کوتاه" title="لینک کوتاه" style="cursor: pointer;" >
-                            <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>
-                            <i class="fa fa-copy fa-lg"></i>
-                        </a>
-                        <input type ="hidden" value="<?php echo  wp_get_shortlink( 0, 'post', true ); ?>" id="short_link" >
-                        <span id="shorturl-msg">کپی شد</span>
                     </div>
                 </div>
             </div>
-            <!--            </div>-->
 
             <div class="container">
                 <div class="row">
@@ -107,7 +107,7 @@ $content_class = woodmart_get_content_class();
 
 
     <audio id="audio" src="<?php echo get_stylesheet_uri().'/../assets/beep.wav';
-    ?>" ></audio>
+	?>" ></audio>
 
 </div><!-- .site-content -->
 

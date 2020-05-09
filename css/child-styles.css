@@ -731,8 +731,8 @@ p.publish_text a {
 }
 /* support */
 
-/* single page */
 
+/* single page */
 form input{
     font-size: 14px !important;
     border: 2px solid rgba(129,129,129,0.2) !important;
@@ -751,6 +751,10 @@ form input{
     align-items: center;
     align-content: flex-start;
     width: 100%;
+}
+.post-share-container .woodmart-social-icons {
+    float: none;
+    margin: 12px auto;
 }
 .shorturl-input {
     position: relative;
@@ -787,7 +791,7 @@ form input{
     background-color: rgb(20,20,20);
     opacity: 0.9;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
     border-radius: 6px;
     display: none;
     transition: 0.3s ease;
@@ -809,7 +813,7 @@ form input{
     position: relative;
 }
 .arrow_box:after, .arrow_box:before {
-    top: 45px;
+    top: 40px;
     left: 50%;
     border: solid transparent;
     content: " ";
@@ -824,6 +828,17 @@ form input{
     border-top-color: rgb(20,20,20);;
     border-width: 8px;
     margin-left: -10px;
+}
+
+.progress{
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    background: #e5490a;
+    height: 3px;
+    border-radius: 0;
 }
 
 

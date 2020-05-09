@@ -129,6 +129,7 @@ jQuery(document).ready(function($) {
         });
     });
 
+
     // Custom tooltip //
     function placeTooltip(x_pos, y_pos) {
         $("#tooltip").css({
@@ -149,15 +150,27 @@ jQuery(document).ready(function($) {
             $('div#tooltip').css('display', 'none');
         }
     });
-
     $('#twitter_intent').click(function (e) {
         e.preventDefault();
-        window.open('https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+$('#short_link').val(), '_blank', 'width=700,height=500');
+        var share_txt = 'https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+"  "+$('#short_link').val();
+        window.open(share_txt, '_blank', 'width=700,height=500');
         return false;
-    })
+    });
+    // Custom tooltip //
+
 
 });
 
+
+document.onscroll = function(){
+    var pos = getVerticalScrollPercentage(document.body);
+    document.getElementById("scroll-bar").style.width = pos+'%';
+};
+function getVerticalScrollPercentage( elm ){
+    var p = elm.parentNode,
+        pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+    return pos;
+}
 
 
 
