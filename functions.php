@@ -203,4 +203,18 @@ add_filter( 'allowed_redirect_hosts', function(){
 	return $hosts;
 });
 
+
+function aparat($atts) {
+extract( shortcode_atts( array(
+'id' => '',
+'width' => 600,
+'height' => 450,
+'style' => 'margin: 10px;'
+), $atts ) );
+	$servertype = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http');
+
+    return "<center style='{$style}'><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></center>";
+}
+add_shortcode( 'aparat', 'aparat' );
+
 ?>

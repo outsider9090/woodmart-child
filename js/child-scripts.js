@@ -10,6 +10,9 @@ jQuery(document).ready(function($) {
             postid: postid
         };
 
+
+
+
         $('#loadingPanel'+postid).css('display', 'flex');
         $.ajax({
             url: MyAjax.ajaxurl,
@@ -57,13 +60,12 @@ jQuery(document).ready(function($) {
                 $('#pp_like'+dataId).find('span').text(likes);
                 //console.log(res);
             }, error:function (err) {
-               // console.log(err);
+                // console.log(err);
             },complete:function () {
                 $('#loadingPanel'+postid).css('display', 'none');
             }
         });
     });
-
 
     $('.like_btn').click(function(e){
         e.preventDefault();
@@ -92,7 +94,7 @@ jQuery(document).ready(function($) {
                             location.href= jQuery('#url_redirect').data('url');
                         },
                         callbackCancel:()=>{
-                           // console.log('Cancel');
+                            // console.log('Cancel');
                         }
                     });
                     $('.article-cover').css('display', 'none');
@@ -118,14 +120,41 @@ jQuery(document).ready(function($) {
                     });
                 }
                 $('.like_btn').find('span').text(likes);
-               // console.log(res);
+                // console.log(res);
             }, error:function (err) {
-               // console.log(err);
+                // console.log(err);
             },complete:function () {
                 $('.article-cover').css('display', 'none');
             }
         });
     });
+
+    // Custom tooltip //
+    function placeTooltip(x_pos, y_pos) {
+        $("#tooltip").css({
+            top: y_pos-70 + 'px',
+            left: x_pos-30 + 'px',
+            position: 'absolute'
+        });
+    }
+    $('.woodmart-entry-content').find('p').mouseup(function (e) {
+        var selection = window.getSelection().toString();
+        $('p#selTxt').val(selection.toString());
+        var x = e.pageX;
+        var y = e.pageY;
+        placeTooltip(x, y);
+        if (selection.length > 1){
+            $("#tooltip").show();
+        } else {
+            $('div#tooltip').css('display', 'none');
+        }
+    });
+
+    $('#twitter_intent').click(function (e) {
+        e.preventDefault();
+        window.open('https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+$('#short_link').val(), '_blank', 'width=700,height=500');
+        return false;
+    })
 
 });
 

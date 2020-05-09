@@ -407,12 +407,48 @@ article.blog-design-small-images>div.article-inner>div.article-body-container{he
 .mihanpanelpanel .mpsidebar .nav i {float: right;margin-left: 15px;}
 
 
-/* Extra styles */
-.woodmart-social-icons {
-	float: none;
-	margin: 12px auto;
-}
 
+/* Extra styles */
 .woodmart-single-footer .single-post-social{
 	flex: none;
 }
+
+/* improve fonts ui */
+.post.blog-post-loop .entry-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	line-height: 35px;
+	color: #363636;
+}
+.post-single-page .entry-title {
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 2;
+	color: #363636;
+}
+.post-single-page .entry-content {
+	margin-bottom: 60px;
+	color: #4a4a4a;
+	line-height: 2;
+	font-size: 1.1rem;
+}
+blog-design-default .woodmart-entry-content {
+	color: #858585;
+	line-height: 1.8;
+	font-size: 0.9em;
+}
+@media screen and (max-width: 768px) {
+	.post-single-page .entry-content {
+		margin-bottom: 60px;
+		color: #4a4a4a;
+		line-height: 1.8;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 575px) {
+	.post-single-page .entry-title {
+		font-size: 1.2em;
+		line-height: 2.5rem;
+	}
+}
+/* improve fonts ui */

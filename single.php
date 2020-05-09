@@ -15,20 +15,21 @@ $content_class = woodmart_get_content_class();
 
 	<?php /* The loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
-
 		<?php get_template_part( 'content', get_post_format() ); ?>
 
-
         <div class="publish">
+            <!--            <div class="post-share-container">-->
             <div class="woodmart-single-footer" style="width: 100%;">
                 <div class="post-share">
-	                <?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
+					<?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
                         <div class="single-post-social">
-			                <?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored')) ?>
+							<?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(
+							        array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
+                            ?>
                         </div>
-	                <?php endif ?>
+					<?php endif ?>
                     <div data-action="copy" class="shorturl-input">
-                        <a onclick="myFunction()" style="cursor: pointer;">
+                        <a onclick="myFunction()" class="woodmart-tooltip" data-original-title="لینک کوتاه" title="لینک کوتاه" style="cursor: pointer;" >
                             <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>
                             <i class="fa fa-copy fa-lg"></i>
                         </a>
@@ -36,8 +37,8 @@ $content_class = woodmart_get_content_class();
                         <span id="shorturl-msg">کپی شد</span>
                     </div>
                 </div>
-
             </div>
+            <!--            </div>-->
 
             <div class="container">
                 <div class="row">
@@ -104,12 +105,25 @@ $content_class = woodmart_get_content_class();
 
 	<?php endwhile; ?>
 
+
+    <audio id="audio" src="<?php echo get_stylesheet_uri().'/../assets/beep.wav';
+    ?>" ></audio>
+
 </div><!-- .site-content -->
 
 
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+
+
+<!--  Custom tooltip  -->
+<div id="tooltip" class="arrow_box">
+    <a href="#" id="twitter_intent"><i class="fa fa-twitter"></i></a>
+</div>
+<p id="selTxt" class=""></p>
+
 
 <script type="text/javascript">
     function copyStringToClipboard (str) {
@@ -125,9 +139,12 @@ $content_class = woodmart_get_content_class();
     function myFunction() {
         var copyText = document.getElementById("short_link");
         copyStringToClipboard(copyText.value);
+        var sound = document.getElementById("audio");
+        sound.play();
         document.getElementById('shorturl-msg').style.display = "block";
         setTimeout(function() {
             document.getElementById('shorturl-msg').style.display = "none";
         }, 2000);
     }
+
 </script>

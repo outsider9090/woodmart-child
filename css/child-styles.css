@@ -744,7 +744,6 @@ form input{
     box-shadow: 0 0 0 0.1rem rgba(129,129,129,.2)  !important;
 }
 
-
 .post-share{
     display: flex;
     flex-flow: row wrap;
@@ -783,46 +782,49 @@ form input{
     display: none;
 }
 
+/* Custom tooltip */
+#tooltip {
+    background-color: rgb(20,20,20);
+    opacity: 0.9;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    transition: 0.3s ease;
+}
+#tooltip i {
+    font-size: 22px;
+}
+#tooltip a {
+    margin: auto 6px;
+    padding: 4px;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+#tooltip a:hover {
+    color: #fff;
+}
 
-/* improve fonts ui */
-.post.blog-post-loop .entry-title {
-    font-weight: 700;
-    font-size: 1.3em;
-    line-height: 35px;
-    color: #363636;
+.arrow_box{
+    position: relative;
 }
-.post-single-page .entry-title {
-    font-weight: 700;
-    font-size: 1.5em;
-    line-height: 2;
-    color: #363636;
+.arrow_box:after, .arrow_box:before {
+    top: 45px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    transform: rotateZ(0deg);
 }
-.post-single-page .entry-content {
-    margin-bottom: 60px;
-    color: #4a4a4a;
-    line-height: 2;
-    font-size: 1.1rem;
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: rgb(20,20,20);;
+    border-width: 8px;
+    margin-left: -10px;
 }
-blog-design-default .woodmart-entry-content {
-    color: #858585;
-    line-height: 1.8;
-    font-size: 0.9em;
-}
-@media screen and (max-width: 768px) {
-    .post-single-page .entry-content {
-        margin-bottom: 60px;
-        color: #4a4a4a;
-        line-height: 1.8;
-        font-size: 1rem;
-    }
-}
-@media screen and (max-width: 575px) {
-    .post-single-page .entry-title {
-        font-size: 1.2em;
-        line-height: 2.5rem;
-    }
-}
-/* improve fonts ui */
 
 
 /*----------------------------Media Queries----------------------------*/
@@ -1020,10 +1022,6 @@ blog-design-default .woodmart-entry-content {
     .social-left{
         width: 100%;
         text-align: center;
-    }
-
-    .social .woodmart-social-icons{
-        float: unset;
     }
 
     p.publish_text {
@@ -1399,6 +1397,10 @@ blog-design-default .woodmart-entry-content {
         width: 40px;
     }
 }
+
+
+
+
 
 
 
