@@ -174,7 +174,7 @@ function login_cookie($login) {
 		'userRole' => $encrypted_role
 	);
 
-	setcookie("wordpress_8L25432ACC2D4A404E635266556A58CC", serialize($info), time()+1800 , '/', '' , false , false );  /* expire in 30 mins */
+	setcookie("wordpress_8L25432ACC2D4A404E635266556A58CC", serialize($info), time()+14400 , '/', '' , false , false );  /* expire in 3 hours */
 }
 
 

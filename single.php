@@ -121,6 +121,7 @@ $content_class = woodmart_get_content_class();
 <!--  Custom tooltip  -->
 <div id="tooltip" class="arrow_box">
     <a href="#" id="twitter_intent"><i class="fa fa-twitter"></i></a>
+<!--    <a href="#" id="facebook_intent"><i class="fa fa-facebook"></i></a>-->
 </div>
 <p id="selTxt" class=""></p>
 

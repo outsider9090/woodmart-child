@@ -841,6 +841,11 @@ form input{
     border-radius: 0;
 }
 
+.woodmart-toolbar>a, .woodmart-toolbar>div {
+    /*flex: 0 0 17%;*/
+}
+
+
 
 /*----------------------------Media Queries----------------------------*/
 
@@ -1412,8 +1417,6 @@ form input{
         width: 40px;
     }
 }
-
-
 
 
 

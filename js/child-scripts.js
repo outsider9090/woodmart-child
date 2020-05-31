@@ -152,10 +152,18 @@ jQuery(document).ready(function($) {
     });
     $('#twitter_intent').click(function (e) {
         e.preventDefault();
-        var share_txt = 'https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+"  "+$('#short_link').val();
+       var share_txt = 'https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+' \n '+$('#short_link').val();
         window.open(share_txt, '_blank', 'width=700,height=500');
+        //$('div#tooltip').css('display', 'none');
         return false;
     });
+    // $('#facebook_intent').click(function (e) {
+    //     e.preventDefault();
+    //     var share_txt = 'https://www.facebook.com/dialog/share?app_id=1838554979696051&display=popup&quote='
+    //         +$('p#selTxt').val()+'&href='+$('#short_link').val();
+    //     window.open(share_txt, '_blank', 'width=700,height=500');
+    //     return false;
+    // });
     // Custom tooltip //
 
 
