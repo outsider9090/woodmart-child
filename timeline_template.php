@@ -5,7 +5,6 @@ get_header(); ?>
 
 
 <!-- Content -->
-
 <style type="text/css">
     * {
         margin: 0;
@@ -13,7 +12,7 @@ get_header(); ?>
     }
 
     body {
-        background: #fafafa;
+        background: #f3f3f3;
         font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
         color: #444;
         font-size: 14px;
@@ -31,9 +30,13 @@ get_header(); ?>
 
     #main-content{
         padding: 30px;
+        background: #eee;
+        border: 1px solid #bdbddb;
+        width: 94%;
+        margin: auto;
     }
     #main-content p{
-        font-size: 16px;
+        font-size: 18px;
         font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
         line-height: 2;
         text-align: justify;
@@ -73,20 +76,23 @@ get_header(); ?>
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        width: 100%;
         text-align: center;
-        height: 800px;
+        height: 900px;
         overflow: hidden;
         margin: 20px auto 100px auto;
         position: relative;
-        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+        background-color: white;
+        width: 94%;
+        border-radius: 15px;
+        border: 2px solid #e0e0e0;
+        padding: 24px;
     }
     #dates {
         width: 15%;
-        height: 800px;
+        height: 700px !important;
         overflow: hidden;
         float: left;
-        margin-top: 200px !important;
+        margin-top: 100px !important;
         border-left: 2px dotted #bdbdbd;
     }
     #dates li {
@@ -96,7 +102,6 @@ get_header(); ?>
         line-height: 100px;
         font-size: 24px;
         padding-left: 10px;
-        /*background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;*/
     }
     #dates a {
         line-height: 38px;
@@ -119,8 +124,10 @@ get_header(); ?>
         float: left;
         margin: auto;
     }
+    .timeline-header{
+        margin-top: 10px;
+    }
     #issues h2{
-        margin-top: 30px;
         color: #444444;
         font-size: 20px;
         text-align: center;
@@ -149,10 +156,11 @@ get_header(); ?>
     }
     #issues li span.person{
         min-width: 350px;
-        margin: 6px 60px;
+        margin: 10px 60px;
         padding: 10px;
         background-color: #ffffff;
         box-shadow: 0 0 10px #bdbdbd;
+        border-radius: 20px;
     }
     #issues li.selected img {
         border: 1px solid #bdbddb;
@@ -195,7 +203,13 @@ get_header(); ?>
         padding: 10px;
         color: #444444;
         font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
-        text-align: center;
+        text-align: right;
+        direction: ltr;
+    }
+    #issues li p i{
+        margin-left: 6px;
+        font-size: 20px;
+        color: #444444;
     }
 
     #grad_top,
@@ -206,11 +220,11 @@ get_header(); ?>
     }
     #grad_top {
         top: 0;
-        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
+        /*background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;*/
     }
     #grad_bottom {
         bottom: 0;
-        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
+        /*background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;*/
     }
 
     #next,
@@ -230,12 +244,14 @@ get_header(); ?>
         background-position:  0 0;
     }
     #next {
-        bottom: 0;
-        background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+        bottom: 10px;
+        /*background-image: url('images/timeline/next_v.png');*/
+        background-image: url('/wp-content/themes/woodmart-child/images/timeline/next_v.png');
     }
     #prev {
-        top: 120px;
-        background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+        top: 10px;
+        /*background-image: url('images/timeline/prev_v.png');*/
+        background-image: url('/wp-content/themes/woodmart-child/images/timeline/prev_v.png');
     }
     #next.disabled,
     #prev.disabled {
@@ -245,9 +261,17 @@ get_header(); ?>
 
     /*---------------------------- Media Queries ----------------------------*/
 
+    @media screen and (max-width: 1100px) {
+        #timeline{
+            height: 1000px;
+        }
+        #issues li span.person{
+            margin: 6px 24px;
+        }
+    }
     @media screen and (max-width: 1000px) {
         #issues li span.person{
-            margin: 6px 12px;
+            margin: 6px;
         }
         #dates  {
             margin-top: 250px !important;
@@ -255,17 +279,22 @@ get_header(); ?>
         #dates .selected {
             font-size: 34px;
         }
+        #issues li span.person {
+            min-width: 300px;
+            border-radius: 16px;
+        }
     }
     @media screen and (max-width: 860px) {
         #issues li span.person{
             margin: 4px;
-            min-width: 325px;
+            min-width: 275px;
+            border-radius: 10px;
         }
         #dates a {
-            font-size: 20px;
+            font-size: 18px;
         }
         #dates .selected {
-            font-size: 30px;
+            font-size: 24px;
         }
         #issues li img {
             width: 120px;
@@ -283,14 +312,14 @@ get_header(); ?>
     }
     @media screen and (max-width: 760px) {
         #dates a {
-            font-size: 18px;
+            font-size: 16px;
         }
         #dates li {
             padding-left: 0;
-            width: 85px;
+            width: 70px;
         }
         #dates .selected {
-            font-size: 26px;
+            font-size: 20px;
         }
         #issues li img {
             width: 100px;
@@ -300,6 +329,7 @@ get_header(); ?>
             font-size: 30px;
         }
         #issues li p {
+            direction: ltr;
             font-size: 14px;
             margin: 8px;
             line-height: 14px;
@@ -307,23 +337,23 @@ get_header(); ?>
         }
         #issues li span.person{
             margin: 20px auto;
-            min-width: 275px;
+            min-width: 250px;
         }
     }
     @media screen and (max-width: 650px) {
         #issues li span.person{
-            margin: 4px;
-            min-width: 250px;
+            margin: 2px;
+            min-width: 200px;
         }
         #dates a {
-            font-size: 16px;
+            font-size: 14px;
         }
         #dates li {
             padding-left: 0;
             width: 65px;
         }
         #dates .selected {
-            font-size: 24px;
+            font-size: 18px;
         }
         #issues li img {
             width: 85px;
@@ -341,16 +371,20 @@ get_header(); ?>
     @media screen and (max-width: 600px) {
         #issues li span.person{
             margin: 2px;
-            min-width: 200px;
+            min-width: 175px;
         }
         #dates {
             margin-top: 125px !important;
         }
+        #dates li {
+            padding-left: 0;
+            width: 50px;
+        }
         #dates a {
-            font-size: 14px;
+            font-size: 13px;
         }
         #dates .selected {
-            font-size: 20px;
+            font-size: 16px;
         }
         #issues li {
             margin-top: 50px;
@@ -371,6 +405,9 @@ get_header(); ?>
             font-size: 13px;
             border-radius: 2px;
         }
+        #issues li p i {
+            font-size: 16px;
+        }
     }
     @media screen and (max-width: 500px) {
         #main-content p {
@@ -378,7 +415,9 @@ get_header(); ?>
         }
         #issues li span.person{
             margin: 0;
-            min-width: auto;
+            min-width: 110px;
+            width: auto;
+            border-radius: 6px;
         }
         #dates {
             margin-top: 300px !important;
@@ -386,8 +425,14 @@ get_header(); ?>
         #dates a {
             font-size: 10px;
         }
+        #dates li {
+            width: 30px;
+        }
         #dates .selected {
             font-size: 12px;
+        }
+        #issues li p i {
+            font-size: 14px;
         }
     }
     @media screen and (max-width: 400px) {
@@ -414,8 +459,15 @@ get_header(); ?>
         #issues a {
             font-size: 11px;
         }
+        #issues li p i {
+            font-size: 12px;
+        }
     }
+
+
+
 </style>
+
 
 <div id="main-content">
     <p>چند سالی است وب سایت KnowledgePlus.ir در راستای اهداف عالی آموزشی سایت و ایجاد انگیزه در افراد مستعد و متخصص، همچنین ایفای نقشی در رشد جامعه علمی کشور، اقدام به برگذاری مسابقات علمی با موضوعات و جوایز مختلف می نماید. سیسوگ نیز بنا به رسالت خود، این مجموعه آموزشی را معرفی می کند.</p>
@@ -424,86 +476,121 @@ get_header(); ?>
 <div id="timeline">
     <ul id="dates">
         <li><a href="#1393" class="selected">1393</a></li>
+        <li><a href="#1394">1394</a></li>
         <li><a href="#1395">1395</a></li>
         <li><a href="#1396">1396</a></li>
+        <li><a href="#1397">1397</a></li>
     </ul>
 
     <ul id="issues">
         <li id="1393" class="selected">
-            <div class="row">
+            <div class="row timeline-header">
                 <h2>مسابقه علمی سال 1393</h2>
-                <p class="content">سال 93 اولین مسابقه علمی با موضوع ارائه کتابخانه های کاربردی مبتنی بر میکروکنترلرهای AVR و XMEGA برگزار گردید که جناب آقای مهدی سلگی با طرح "اتصال HMI به XMEGA با پروتکل Modbus RTU" در رتبه اول و آقای ایمان باقری با طرح "ارسال و نمایش اطلاعات ماژول شتاب سنج بصورت بیسیم" جایگاه دوم این مسابقه را کسب نمودند. همچنین طراحی pcb طرح توسط آقای حجت فرجیان صورت گرفت و طرحی نفر بعدی نیز حائز شرایط رتبه سوم نگردید.</p>
+                <p class="content">سال 93 اولین مسابقه علمی با موضوع ارائه کتابخانه های کاربردی مبتنی بر میکروکنترلرهای AVR و XMEGA برگزار گردید که جناب آقای مهدی سلگی با طرح "اتصال HMI به XMEGA با پروتکل Modbus RTU" در رتبه اول و آقای ایمان باقری با طرح "ارسال و نمایش اطلاعات ماژول شتاب سنج بصورت بیسیم" جایگاه دوم این مسابقه را کسب نمودند.</p>
             </div>
             <div class="persons">
                 <span class="person">
-               <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/مهدی-سلگی.jpg"; ?> />
+               <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مهدی-سلگی.jpg"; ?>" />
             <h1>نفر اول</h1>
-            <p>آقای مهدی سلگی</p>
-            <p>مبلغ جایزه:  <span>20000000 ريال</span></p>
-            <p>وبسایت:  <span>controlsystemco.com</span></p>
-            <p>mehdi_solgi@yahoo.com</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_1.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+             <p>  آقای مهدی سلگی<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 20000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> controlsystemco.com  </span> <i class="fa fa-globe"></i></p>
+            <p><span>mehdi_solgi@yahoo.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
-            <span class="person">
-               <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/ایمان-باقری.jpg"; ?>  />
+                <span class="person">
+               <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/ایمان-باقری.jpg"; ?>"  />
             <h1>نفر دوم</h1>
-            <p>آقای ایمان باقری</p>
-            <p>مبلغ جایزه:  <span>10000000 ريال</span></p>
-            <p>iman28aban@gmail.com</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_2.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+            <p>  آقای ایمان باقری<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 10000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
+            <p><span>iman28aban@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_2.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
             </div>
+        </li>
 
+        <li id="1394">
+            <div class="row timeline-header">
+                <h2>مسابقه علمی سال 1394</h2>
+                <p class="content">موضوع دومین دوره مسابقه عبارت است از پیاده سازی ساز و کاری که بتوان از راه دور و از طریق خط تلفن و یا ماژول های gsm، برنامه یک میکروکنترلر AVR را بروز رسانی کرد. اولویت در این مسابقه با روش هایی است که با کمترین هزینه، امکان برنامه ریزی میکروکنترلر را فراهم کنند. اما جالب است بدانید در این سری مسابقه، علیرغم اعلام آمادگی چندین نفر برای شرکت در مسابقه و چند ماه مهلت برای به نتیجه رساندن کار، در نهایت هیچ فرد یا گروهی موفق به انجام و ارائه طرح نهایی نگردید!</p>
+            </div>
+            <div class="persons">
+                <span class="person">
+               <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/not-found.jpg"; ?>" />
+            </span>
+            </div>
         </li>
 
         <li id="1395">
-            <div class="row">
+            <div class="row timeline-header">
                 <h2>مسابقه علمی سال ۱۳۹۵</h2>
                 <p class="content">سومین دوره مسابقه علمی سایت نالج پلاس (KnowledgePlus.ir) در سال ۱۳۹۵ با موضوع تدوین جامع ترین و کاربردی ترین منبع آموزشی برای پیاده سازی پروتکل Ethernet برگزار شد، که جناب آقای محمد حسین کوهی قمصری جایگاه اول و آقای سوران آراسته به عنوان نفر دوم مسابقه معرفی شدند.</p>
             </div>
             <div class="persons">
             <span class="person">
-                   <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-حسین-کوهی-قمصری.jpg"; ?> />
+                   <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-حسین-کوهی-قمصری.jpg"; ?>" />
             <h1>نفر اول</h1>
-            <p>آقای محمد حسین کوهی قمصری</p>
-            <p>مبلغ جایزه:  <span>30000000 ريال</span></p>
-            <p>Mohammadghamsari@ieee.org</p>
-            <p>mohammadghamsari18@yahoo.com</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_1.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+                <p>  آقای محمد حسین کوهی قمصری<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 30000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
+            <p><span>Mohammadghamsari@ieee.org</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
                 <span class="person">
-                     <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/سوران-آراسته.jpg"; ?> />
+                     <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/سوران-آراسته.jpg"; ?>" />
             <h1>نفر دوم</h1>
-            <p>آقای سوران آراسته</p>
-            <p>مبلغ جایزه:  <span>15000000 ريال</span></p>
-            <p>Soran.arasteh@gmail.com</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_2.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+                                         <p>  آقای سوران آراسته<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 15000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
+            <p><span>Soran.arasteh@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_2.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
             </div>
         </li>
 
         <li id="1396">
-            <div class="row">
+            <div class="row timeline-header">
                 <h2>مسابقه علمی سال ۱۳۹۶</h2>
                 <p class="content">چهارمین دوره مسابقه علمی در سال ۱۳۹۶ با موضوع انتقال فریم های دوربین هایی نظیر ov7670 از طریق یک ماژول GSM/GPRS و نمایش و ذخیره سازی آن در مقصد برگزار شد که جناب آقای محمد مزارعی و آقای مصطفی کشاورز، برندگان این مسابقه اعلام شدند.</p>
             </div>
             <div class="persons">
 
                 <span class="person">
-                <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-مزارعی.jpg"; ?> />
+                <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-مزارعی.jpg"; ?>" />
             <h1>نفر اول</h1>
-            <p>آقای محمد مزارعی</p>
-            <p>مبلغ جایزه:  <span>50000000 ريال</span></p>
-            <p>mohammad.mazarei@gmail.com</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_1.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+                                                         <p>  آقای محمد مزارعی<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 50000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
+            <p><span>mohammad.mazarei@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
                 <span class="person">
-                  <img src=<?php echo get_stylesheet_directory_uri(). "/images/timeline/مصطفی-کشاورز.jpg"; ?> />
+                  <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مصطفی-کشاورز.jpg"; ?>" />
             <h1>نفر دوم</h1>
-            <p>آقای مصطفی کشاورز</p>
-            <p>مبلغ جایزه:  <span>20000000 ريال</span></p>
-            <p>info@smart-device.ir</p>
-            <p><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_2.rar" class="btn btn-outline-info">دانلود طرح</a></p>
+                                     <p>  آقای مصطفی کشاورز<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 20000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
+            <p><span>info@smart-device.ir</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_2.rar"  class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
+            </span>
+            </div>
+        </li>
+
+        <li id="1397">
+            <div class="row timeline-header">
+                <h2>مسابقه علمی سال 1397</h2>
+                <p class="content">پنجمین دوره مسابقه علمی در سال ۱۳۹۷ با موضوع تدوین جامع ترین و کاربردی ترین منبع آموزشی به همراه مثال های کاربردی برای پیاده سازی ارتباط USB در مدها و کلاس های مختلف روی یکی از شماره های خانواده stm32 برگزار شد که برنده این مسابقه جناب آقای مهدی داداشی بودند.</p>
+            </div>
+            <div class="persons">
+                  <span class="person">
+                     <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مهدی-داداشی.jpg"; ?>" />
+            <h1>نفر اول</h1>
+              <p>  آقای مهدی داداشی<i class="fa fa-user"></i></p>
+            <p>  <span> Rial 70000000 </span> <i class="fa fa-money"></i></p>
+            <p>  <span> mahdidadashi.ir  </span> <i class="fa fa-globe"></i></p>
+            <p><span>Mahdidadashi@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center"><a href="https://github.com/mahdidadashi65/STM32_USB_Tutorials" target="_blank" rel="nofollow" class="btn btn-outline-info">دانلود طرح</a></p>
             </span>
             </div>
         </li>

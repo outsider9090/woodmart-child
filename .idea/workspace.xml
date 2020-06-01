@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/timeline/ایمان-باقری.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/سوران-آراسته.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/محمد-حسین-کوهی-قمصری.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/محمد-مزارعی.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/مصطفی-کشاورز.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/مهدی-داداشی.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/timeline/مهدی-سلگی.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timeline_template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/timeline/next_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/timeline/not-found.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/timeline/prev_v.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/child-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/child-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeline_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/timeline_template.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,10 +26,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
-      <find>pp_like</find>
-      <find>cover</find>
-      <find>font-awesome.min.css</find>
       <find>nofoll</find>
       <find>hidden</find>
       <find>zplanet</find>
@@ -65,6 +52,10 @@
       <find>short</find>
       <find>scroll</find>
       <find>twitter_intent</find>
+      <find>row</find>
+      <find>timeline</find>
+      <find>ريال</find>
+      <find>1394</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -89,6 +80,8 @@
       <replace>6px</replace>
       <replace>user-link span.source-link</replace>
       <replace>20</replace>
+      <replace>row timeline-header</replace>
+      <replace>Rial</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child</dir>
@@ -148,8 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,7 +218,8 @@
       <workItem from="1589230964403" duration="2747000" />
       <workItem from="1589297734926" duration="931000" />
       <workItem from="1590879412463" duration="3920000" />
-      <workItem from="1590940370894" duration="3277000" />
+      <workItem from="1590940370894" duration="3304000" />
+      <workItem from="1590957937754" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -248,16 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1589066581148</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added timeline">
+      <created>1590944624603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590944624604</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336962000" />
+    <option name="totallyTimeSpent" value="344875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +329,8 @@
     <MESSAGE value="Added post-share to single.php" />
     <MESSAGE value="Added twitter intent &amp; updated post share  to single.php" />
     <MESSAGE value="Some improvements in single.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some improvements in single.php" />
+    <MESSAGE value="Added timeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added timeline" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php" />
@@ -490,8 +492,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timeline_template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="134" column="27" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
+        <state relative-caret-position="220">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#p#4;n#span#0;n#div#1;n#li#0;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#1;n#div#1;n#li#0;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#0;n#div#1;n#li#2;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#1;n#div#1;n#li#2;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#0;n#div#1;n#li#3;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#1;n#div#1;n#li#3;n#ul#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#span#0;n#div#1;n#li#4;n#ul#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
