@@ -147,5 +147,4 @@ $content_class = woodmart_get_content_class();
             document.getElementById('shorturl-msg').style.display = "none";
         }, 2000);
     }
-
 </script>

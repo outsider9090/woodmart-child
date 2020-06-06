@@ -5,6 +5,7 @@ get_header(); ?>
 
 
 <!-- Content -->
+
 <style type="text/css">
     * {
         margin: 0;
@@ -29,11 +30,12 @@ get_header(); ?>
     }
 
     #main-content{
-        padding: 30px;
-        background: #eee;
-        border: 1px solid #bdbddb;
+        padding: 24px;
+        background: #ffffff;
         width: 94%;
         margin: auto;
+        border: 2px solid #e0e0e0;
+        border-radius: 15px;
     }
     #main-content p{
         font-size: 18px;
@@ -43,7 +45,37 @@ get_header(); ?>
         color: #333333;
         margin: auto;
     }
-    #issues a{
+    #main-content p.file-pass{
+        font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #444444;
+    }
+    #main-content p.file-pass small{
+        position: relative;
+        cursor: pointer;
+        padding: 8px 20px;
+        border: 1px solid #bdbdbd;
+        border-radius: 55px;
+        background: whitesmoke;
+        color: #363636;
+    }
+    #main-content p.file-pass i{
+        margin: auto 4px;
+    }
+    #main-content p.file-pass small span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        padding: 6px 20px;
+        color: #eee;
+        border-radius: 50px;
+        opacity: 0.8;
+    }
+    #issues a.btn{
         background: #4d8fac;
         color: #fff;
         padding: 8px 16px;
@@ -52,7 +84,7 @@ get_header(); ?>
         font-weight: bold;
         text-decoration: none;
     }
-    #issues a:hover{
+    #issues a.btn:hover{
         background-color: #89c4f4;
     }
     a.selected {
@@ -107,12 +139,12 @@ get_header(); ?>
         line-height: 38px;
         padding-bottom: 10px;
     }
-    #dates a::before{
-        content: '\f111';
-        font-family: 'FontAwesome';
-        font-size: 15px;
-        vertical-align: middle;
-    }
+    /*#dates a::before{*/
+    /*content: '\f111';*/
+    /*font-family: 'FontAwesome';*/
+    /*font-size: 15px;*/
+    /*vertical-align: middle;*/
+    /*}*/
     #dates .selected {
         font-size: 38px;
     }
@@ -339,6 +371,12 @@ get_header(); ?>
             margin: 20px auto;
             min-width: 250px;
         }
+        #issues li p.user-email{
+            font-size: 12px;
+        }
+        #issues li p i {
+            font-size: 16px;
+        }
     }
     @media screen and (max-width: 650px) {
         #issues li span.person{
@@ -366,6 +404,9 @@ get_header(); ?>
             font-size: 12px;
             margin: 6px;
             padding: 6px;
+        }
+        #issues li p.user-email{
+            font-size: 10px;
         }
     }
     @media screen and (max-width: 600px) {
@@ -401,8 +442,19 @@ get_header(); ?>
             margin: 4px;
             padding: 4px 0;
         }
+        #issues li p.user-email{
+            display: none;
+        }
+        #main-content p.file-pass{
+            font-size: 15px;
+        }
         #issues a {
             font-size: 13px;
+            border-radius: 2px;
+        }
+        #issues a.btn {
+            padding: 4px 10px;
+            font-size: 12px;
             border-radius: 2px;
         }
         #issues li p i {
@@ -470,41 +522,55 @@ get_header(); ?>
 
 
 <div id="main-content">
-    <p>چند سالی است وب سایت KnowledgePlus.ir در راستای اهداف عالی آموزشی سایت و ایجاد انگیزه در افراد مستعد و متخصص، همچنین ایفای نقشی در رشد جامعه علمی کشور، اقدام به برگذاری مسابقات علمی با موضوعات و جوایز مختلف می نماید. سیسوگ نیز بنا به رسالت خود، این مجموعه آموزشی را معرفی می کند.</p>
+    <p>
+        چند سالی است که وب‌سایت <a href="http://knowledgeplus.ir" rel="nofollow" target="_blank">knowledgeplus.ir</a> در راستای اهداف عالی آموزشی و ایجاد انگیزه و رقابت بین افراد مستعد و متخصص و همچنین رشد سطح علمی و فنی کشور در زمینه‌ی الکترونیک، اقدام به یک سری مسابقات با موضوعات مختلف و جوایز ارزنده‌ای کرده است.
+        از آن‌جایی که یکی از اهداف مسابقات ارائه مستندات طرح برنده، به عنوان مرجعی برای سایر افراد علاقه‌مند بود، در نهایت تمامی مستندات طرح برنده به صورت رایگان در اختیار عموم قرار می‌گرفت.
+        سیسوگ در راستای قدردانی از زحمات مهندس کی نژاد مدیر و مدرس وب‌سایت <a href="http://knowledgeplus.ir" rel="nofollow" target="_blank">knowledgeplus.ir</a> و همچنین سهولت دسترسی و دانلود برای افراد علاقه‌مند، مستندات طرح‌های برنده را بر روی سرور سیسوگ قرار داده است.
+    </p>
+    <p class="file-pass">
+        رمز فایل ها:
+        <small onclick="myFunction();" class="woodmart-tooltip" data-original-title=" کپی رمز فایل ها" title="کپی رمز فایل ها">
+            knowledgeplus.ir <i class="fa fa-copy mx-2"></i>
+            <span id="file-pass-msg" style="display: none;">کپی شد</span>
+        </small>
+    </p>
+    <input type="hidden" id="file_pass" value="knowledgeplus.ir">
+    <audio id="audio" src="<?php echo get_stylesheet_uri().'/../assets/beep.wav';
+	?>" ></audio>
 </div>
 
 <div id="timeline">
     <ul id="dates">
-        <li><a href="#1393" class="selected">1393</a></li>
-        <li><a href="#1394">1394</a></li>
-        <li><a href="#1395">1395</a></li>
-        <li><a href="#1396">1396</a></li>
-        <li><a href="#1397">1397</a></li>
+        <li><a href="#1393" class="selected">۱۳۹۳</a></li>
+        <li><a href="#1394">۱۳۹۴</a></li>
+        <li><a href="#1395">۱۳۹۵</a></li>
+        <li><a href="#1396">۱۳۹۶</a></li>
+        <li><a href="#1397">۱۳۹۷</a></li>
     </ul>
 
     <ul id="issues">
         <li id="1393" class="selected">
             <div class="row timeline-header">
-                <h2>مسابقه علمی سال 1393</h2>
-                <p class="content">سال 93 اولین مسابقه علمی با موضوع ارائه کتابخانه های کاربردی مبتنی بر میکروکنترلرهای AVR و XMEGA برگزار گردید که جناب آقای مهدی سلگی با طرح "اتصال HMI به XMEGA با پروتکل Modbus RTU" در رتبه اول و آقای ایمان باقری با طرح "ارسال و نمایش اطلاعات ماژول شتاب سنج بصورت بیسیم" جایگاه دوم این مسابقه را کسب نمودند.</p>
+                <h2>مسابقه علمی سال ۱۳۹۳</h2>
+                <p class="content">سال ۹۳ اولین مسابقه علمی با موضوع ارائه کتابخانه های کاربردی مبتنی بر میکروکنترلرهای AVR و XMEGA برگزار گردید که جناب آقای مهدی سلگی با طرح "اتصال HMI به XMEGA با پروتکل Modbus RTU" در رتبه اول و آقای ایمان باقری با طرح "ارسال و نمایش اطلاعات ماژول شتاب سنج بصورت بیسیم" جایگاه دوم این مسابقه را کسب نمودند.</p>
             </div>
             <div class="persons">
                 <span class="person">
                <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مهدی-سلگی.jpg"; ?>" />
             <h1>نفر اول</h1>
              <p>  آقای مهدی سلگی<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 20000000 </span> <i class="fa fa-money"></i></p>
-            <p>  <span> controlsystemco.com  </span> <i class="fa fa-globe"></i></p>
-            <p><span>mehdi_solgi@yahoo.com</span> <i class="fa fa-envelope"></i></p>
+            <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۲۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
+            <p>  <span><a href="http://controlsystemco.com/" target="_blank" rel="nofollow">controlsystemco.com</a></span> <i class="fa fa-globe"></i></p>
+            <p class="user-email"><span>mehdi_solgi@yahoo.com</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
                 <span class="person">
                <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/ایمان-باقری.jpg"; ?>"  />
             <h1>نفر دوم</h1>
             <p>  آقای ایمان باقری<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 10000000 </span> <i class="fa fa-money"></i></p>
+            <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۱۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
             <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
-            <p><span>iman28aban@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p class="user-email"><span>iman28aban@gmail.com</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/93_2.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
             </div>
@@ -512,7 +578,7 @@ get_header(); ?>
 
         <li id="1394">
             <div class="row timeline-header">
-                <h2>مسابقه علمی سال 1394</h2>
+                <h2>مسابقه علمی سال ۱۳۹۴</h2>
                 <p class="content">موضوع دومین دوره مسابقه عبارت است از پیاده سازی ساز و کاری که بتوان از راه دور و از طریق خط تلفن و یا ماژول های gsm، برنامه یک میکروکنترلر AVR را بروز رسانی کرد. اولویت در این مسابقه با روش هایی است که با کمترین هزینه، امکان برنامه ریزی میکروکنترلر را فراهم کنند. اما جالب است بدانید در این سری مسابقه، علیرغم اعلام آمادگی چندین نفر برای شرکت در مسابقه و چند ماه مهلت برای به نتیجه رساندن کار، در نهایت هیچ فرد یا گروهی موفق به انجام و ارائه طرح نهایی نگردید!</p>
             </div>
             <div class="persons">
@@ -532,18 +598,18 @@ get_header(); ?>
                    <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-حسین-کوهی-قمصری.jpg"; ?>" />
             <h1>نفر اول</h1>
                 <p>  آقای محمد حسین کوهی قمصری<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 30000000 </span> <i class="fa fa-money"></i></p>
+               <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۳۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
             <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
-            <p><span>Mohammadghamsari@ieee.org</span> <i class="fa fa-envelope"></i></p>
+            <p class="user-email"><span>Mohammadghamsari@ieee.org</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
                 <span class="person">
                      <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/سوران-آراسته.jpg"; ?>" />
             <h1>نفر دوم</h1>
                                          <p>  آقای سوران آراسته<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 15000000 </span> <i class="fa fa-money"></i></p>
+             <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۱۵,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
             <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
-            <p><span>Soran.arasteh@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p class="user-email"><span>Soran.arasteh@gmail.com</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/95_2.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
             </div>
@@ -559,19 +625,19 @@ get_header(); ?>
                 <span class="person">
                 <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/محمد-مزارعی.jpg"; ?>" />
             <h1>نفر اول</h1>
-                                                         <p>  آقای محمد مزارعی<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 50000000 </span> <i class="fa fa-money"></i></p>
-            <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
-            <p><span>mohammad.mazarei@gmail.com</span> <i class="fa fa-envelope"></i></p>
+                    <p>  آقای محمد مزارعی<i class="fa fa-user"></i></p>
+               <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۵۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
+            <p>  <span><a href="https://sisoog.com" target="_blank" rel="nofollow">sisoog.com</a></span> <i class="fa fa-globe"></i></p>
+            <p class="user-email"><span>mohammad.mazarei@gmail.com</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_1.rar" class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
                 <span class="person">
                   <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مصطفی-کشاورز.jpg"; ?>" />
             <h1>نفر دوم</h1>
-                                     <p>  آقای مصطفی کشاورز<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 20000000 </span> <i class="fa fa-money"></i></p>
+               <p>  آقای مصطفی کشاورز<i class="fa fa-user"></i></p>
+            <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۲۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
             <p>  <span> ---  </span> <i class="fa fa-globe"></i></p>
-            <p><span>info@smart-device.ir</span> <i class="fa fa-envelope"></i></p>
+            <p class="user-email"><span>info@smart-device.ir</span> <i class="fa fa-envelope"></i></p>
             <p style="text-align: center"><a href="https://b2.sisoog.com/file/zmedia/knowledgeplus/96_2.rar"  class="btn btn-outline-info" target="_blank">دانلود طرح</a></p>
             </span>
             </div>
@@ -579,7 +645,7 @@ get_header(); ?>
 
         <li id="1397">
             <div class="row timeline-header">
-                <h2>مسابقه علمی سال 1397</h2>
+                <h2>مسابقه علمی سال ۱۳۹۷</h2>
                 <p class="content">پنجمین دوره مسابقه علمی در سال ۱۳۹۷ با موضوع تدوین جامع ترین و کاربردی ترین منبع آموزشی به همراه مثال های کاربردی برای پیاده سازی ارتباط USB در مدها و کلاس های مختلف روی یکی از شماره های خانواده stm32 برگزار شد که برنده این مسابقه جناب آقای مهدی داداشی بودند.</p>
             </div>
             <div class="persons">
@@ -587,10 +653,13 @@ get_header(); ?>
                      <img src="<?php echo get_stylesheet_directory_uri(). "/images/timeline/مهدی-داداشی.jpg"; ?>" />
             <h1>نفر اول</h1>
               <p>  آقای مهدی داداشی<i class="fa fa-user"></i></p>
-            <p>  <span> Rial 70000000 </span> <i class="fa fa-money"></i></p>
-            <p>  <span> mahdidadashi.ir  </span> <i class="fa fa-globe"></i></p>
-            <p><span>Mahdidadashi@gmail.com</span> <i class="fa fa-envelope"></i></p>
-            <p style="text-align: center"><a href="https://github.com/mahdidadashi65/STM32_USB_Tutorials" target="_blank" rel="nofollow" class="btn btn-outline-info">دانلود طرح</a></p>
+              <p> <span style="visibility: hidden">ا</span> <span style="margin-right: -2px;">  ۷۰,۰۰۰,۰۰۰  </span> <span>ریال</span> <i class="fa fa-money"></i></p>
+            <p>  <span><a href="http://mahdidadashi.ir/" target="_blank" rel="nofollow">mahdidadashi.ir</a></span> <i class="fa fa-globe"></i></p>
+            <p class="user-email"><span>Mahdidadashi@gmail.com</span> <i class="fa fa-envelope"></i></p>
+            <p style="text-align: center">
+                <a href="https://www.aparat.com/playlist/272478" target="_blank" rel="nofollow" class="btn btn-outline-info">مشاهده فیلم های آموزشی</a>
+                <a href="https://github.com/mahdidadashi65/STM32_USB_Tutorials" target="_blank" rel="nofollow" class="btn btn-outline-info">دانلود طرح</a>
+            </p>
             </span>
             </div>
         </li>
@@ -619,6 +688,28 @@ get_header(); ?>
             startAt:		3
         })
     });
+
+
+    function copyStringToClipboard (str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+    function myFunction() {
+        var copyText = document.getElementById("file_pass");
+        copyStringToClipboard(copyText.value);
+        var sound = document.getElementById("audio");
+        sound.play();
+        document.getElementById('file-pass-msg').style.display = "block";
+        setTimeout(function() {
+            document.getElementById('file-pass-msg').style.display = "none";
+        }, 2000);
+    }
 </script>
 
 

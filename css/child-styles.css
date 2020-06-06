@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .post-date.woodmart-post-date {
     min-width: 53px;
     height: auto;
