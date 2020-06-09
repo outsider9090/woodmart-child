@@ -203,18 +203,33 @@ add_filter( 'allowed_redirect_hosts', function(){
 	return $hosts;
 });
 
-
+// for radshid.com
 function aparat($atts) {
-extract( shortcode_atts( array(
-'id' => '',
-'width' => 600,
-'height' => 450,
-'style' => 'margin: 10px;'
-), $atts ) );
+	extract( shortcode_atts( array(
+		'id' => '',
+		'width' => 600,
+		'height' => 450,
+		'style' => 'margin: 10px;'
+	), $atts ) );
 	$servertype = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http');
 
-    return "<center style='{$style}'><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></center>";
+	return "<center style='{$style}'><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></center>";
 }
 add_shortcode( 'aparat', 'aparat' );
+// for radshid.com
+
+
+// custom sidebar
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'name' => 'Planet sidebar', // نام سایدبار
+		'id' => 'planet-sidebar', // آیدی سایدبار را در اینجا تعیین کنید
+		'description' => 'Planet category sidebar', // توضیحی در مورد این سایدبار
+		'before_widget' => '<div class="widget">', // کد قبل از هر منو
+		'after_widget' => '</div>', // کد بعد از هر منو
+		'before_title' => '<h2 class="widget-title">', // قبل از عنوان منو
+		'after_title' => '</h2>', // بعد از عنوان منو
+	));
+}
 
 ?>

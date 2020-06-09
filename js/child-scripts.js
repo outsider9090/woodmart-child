@@ -11,8 +11,6 @@ jQuery(document).ready(function($) {
         };
 
 
-
-
         $('#loadingPanel'+postid).css('display', 'flex');
         $.ajax({
             url: MyAjax.ajaxurl,
