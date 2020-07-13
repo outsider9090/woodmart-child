@@ -129,7 +129,7 @@ get_header(); ?>
 					'order' => 'ASC',
 					'orderby' => 'rand',
 					'cat' => $Grid_catID,
-					'cache_results' => true
+					'cache_results' => false
 				)
 				?>
 				<?php $random_post = new WP_Query( $random_posts_args ); ?>

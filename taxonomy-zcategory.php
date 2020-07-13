@@ -14,6 +14,7 @@ add_filter('excerpt_more', function (){return '  ...';});
 
 function wp_bootstrap4_pagination( $args = array() , $paged_type , $posts_per_page ) {
 
+
 	$text_domain = null;
 
 	$paged = ( get_query_var( $paged_type ) ) ? get_query_var( $paged_type ) : '1';

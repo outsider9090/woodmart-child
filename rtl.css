@@ -428,7 +428,7 @@ article.blog-design-small-images>div.article-inner>div.article-body-container{he
 }
 .post-single-page .entry-content {
 	margin-bottom: 60px;
-	color: #4a4a4a;
+	color: #212121;
 	line-height: 2;
 	font-size: 1.1rem;
 }
@@ -440,7 +440,7 @@ blog-design-default .woodmart-entry-content {
 @media screen and (max-width: 768px) {
 	.post-single-page .entry-content {
 		margin-bottom: 60px;
-		color: #4a4a4a;
+		color: #212121;
 		line-height: 1.8;
 		font-size: 1rem;
 	}

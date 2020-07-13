@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+.blog-design-default .woodmart-entry-content {
+    font-size: 1rem;
+    line-height: 2;
+}
+
 .post-date.woodmart-post-date {
     min-width: 53px;
     height: auto;
@@ -261,10 +266,10 @@ article.article_container {
 h3.planet-title {
     padding: 5px;
     margin: 5px;
-    color: #383833;
+    color: #363636;
     font-family: iranyekan, sans-serif, Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.3rem;
     line-height: 35px;
 }
 
@@ -292,7 +297,7 @@ h3.planet-title a:hover{
 h1.entry-title{
     padding: 16px;
     margin: 5px;
-    color: #383833;
+    color: #363636;
     font-family: iranyekan, sans-serif, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -322,11 +327,11 @@ h1.entry-title{
 
 .article-excerpt p {
     color: #303030;
-    padding:0 12px;
-    line-height: 1.6;
+    padding:0 15px;
+    line-height: 2;
     text-align: justify;
     margin: 0;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: vazir, sans-serif, Arial, Helvetica;
     vertical-align: baseline;
 }
@@ -532,12 +537,12 @@ h1.entry-title{
     margin: 16px auto;
 }
 .article-content p {
-    color: #303030;
-    padding:0 12px;
-    line-height: 1.6;
+    color: #212121;
+    padding:0 15px;
+    line-height: 2;
     text-align: justify;
     margin: 0;
-    font-size: 15px;
+    font-size: 1.1rem;
     font-family: vazir, sans-serif, Arial, Helvetica;
     vertical-align: baseline;
 }
@@ -1421,9 +1426,3 @@ form input{
         width: 40px;
     }
 }
-
-
-
-
-
-

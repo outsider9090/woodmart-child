@@ -1,6 +1,6 @@
 <?php
 /* Variables */
-$loginUrl = 'https://sisoog.com/login/';      // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
+$loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
 /* Variables */
 ?>
 
@@ -16,7 +16,9 @@ $loginUrl = 'https://sisoog.com/login/';      // آدرس صفحه ورود بر
 
     <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
-        <article style="position:relative;" class="post-single-page post-46943 post type-post status-publish format-standard has-post-thumbnail hentry category-quectel- category-simcom category-49 category-recommended">
+        <?php global $post; ?>
+        <article style="position:relative;" id="<?php echo $post->ID; ?>"
+                 class="post-single-page post type-post status-publish format-standard has-post-thumbnail hentry category-quectel- category-simcom category-49 category-recommended">
             <div class="article-cover">
                 <i class="fa fa-spinner fa-spin"></i>
             </div>
@@ -52,7 +54,6 @@ $loginUrl = 'https://sisoog.com/login/';      // آدرس صفحه ورود بر
  <h1 class="entry-title"><?php the_title( '', '', true ); ?></h1>
  <div class="entry-meta woodmart-entry-meta">
     <ul class="entry-meta-list">
-     <!--  <li class="modified-date"><time class="updated" datetime="۱۳۹۸/۱۲/۵ ۸:۵۳:۲۱">اسفند ۵, ۱۳۹۸</time></li> -->
      <li class="meta-author"> ارسال توسط
         <?php echo get_avatar(get_the_author_meta('ID')); ?>
         <a href="<?php echo get_site_url().'/author/'.get_the_author_meta( 'user_login' ); ?>" rel="author">
@@ -194,7 +195,24 @@ $loginUrl = 'https://sisoog.com/login/';      // آدرس صفحه ورود بر
 </div>
 </article>
 
+
 <div class="publish">
+
+    <div class="post-share-container">
+        <div class="woodmart-single-footer" style="width: 100%;">
+            <div class="post-share">
+                <div data-action="copy" class="shorturl-input">
+                    <a onclick="myFunction()" class="woodmart-tooltip" data-original-title="لینک کوتاه" title="لینک کوتاه" style="cursor: pointer;" >
+                        <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>
+                        <i class="fa fa-copy fa-lg"></i>
+                    </a>
+                    <input type ="hidden" value="<?php echo  wp_get_shortlink( 0, 'post', true ); ?>" id="short_link" >
+                    <span id="shorturl-msg">کپی شد</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-6 support">
@@ -255,5 +273,41 @@ comments_template( '/comments.php', false );
 
 </div>
 
+
+<audio id="audio" src="<?php echo get_stylesheet_uri().'/../assets/beep.wav';
+?>" ></audio>
+
+<!--  Custom tooltip  -->
+<div id="tooltip" class="arrow_box">
+    <a href="#" id="twitter_intent"><i class="fa fa-twitter"></i></a>
+</div>
+<p id="selTxt" class=""></p>
+
+
 <?php  get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
+
+<script type="text/javascript">
+    function copyStringToClipboard (str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+    function myFunction() {
+        var copyText = document.getElementById("short_link");
+        copyStringToClipboard(copyText.value);
+        var sound = document.getElementById("audio");
+        sound.play();
+        document.getElementById('shorturl-msg').style.display = "block";
+        setTimeout(function() {
+            document.getElementById('shorturl-msg').style.display = "none";
+        }, 2000);
+    }
+</script>

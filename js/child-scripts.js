@@ -150,7 +150,7 @@ jQuery(document).ready(function($) {
     });
     $('#twitter_intent').click(function (e) {
         e.preventDefault();
-       var share_txt = 'https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+' \n '+$('#short_link').val();
+        var share_txt = 'https://twitter.com/intent/tweet?text='+$('p#selTxt').val()+' \n '+$('#short_link').val();
         window.open(share_txt, '_blank', 'width=700,height=500');
         //$('div#tooltip').css('display', 'none');
         return false;
@@ -170,11 +170,28 @@ jQuery(document).ready(function($) {
 
 document.onscroll = function(){
     var pos = getVerticalScrollPercentage(document.body);
-    document.getElementById("scroll-bar").style.width = pos+'%';
+    console.log(pos);
+    if (pos <= 100) {
+        document.getElementById("scroll-bar").style.visibility = 'visible';
+        document.getElementById("scroll-bar").style.width = pos+'%';
+    }else {
+        document.getElementById("scroll-bar").style.visibility = 'hidden';
+    }
 };
 function getVerticalScrollPercentage( elm ){
-    var p = elm.parentNode,
-        pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+    var article = document.getElementsByClassName("post-single-page");
+
+    if (Object.keys(article).length !== 0){
+        var article_id = article[0].id;
+        var sh = document.getElementById(article_id).scrollHeight;
+        var ch = document.getElementById(article_id).clientHeight;
+        var p = elm.parentNode,
+            pos = (elm.scrollTop || p.scrollTop) / (sh || ch ) * 100;
+    } else {
+        var p = elm.parentNode,
+            pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+    }
+
     return pos;
 }
 

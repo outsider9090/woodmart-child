@@ -138,10 +138,42 @@ function secureLink($url , $post , $str){
 // Remove p tags from category description
 remove_filter('the_content','wpautop');
 
+// Show Planets List Short code
+add_shortcode('show_planet_list', 'planet_list');
+function planet_list($attr , $content = null){
+	require_once( get_template_directory() . '/../woodmart-child/includes/planets_list.php' );
+}
+
+// custom sidebar
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'name' => 'Planet sidebar', // نام سایدبار
+		'id' => 'planet-sidebar', // آیدی سایدبار را در اینجا تعیین کنید
+		'description' => 'Planet category sidebar', // توضیحی در مورد این سایدبار
+		'before_widget' => '<div class="widget">', // کد قبل از هر منو
+		'after_widget' => '</div>', // کد بعد از هر منو
+		'before_title' => '<h2 class="widget-title">', // قبل از عنوان منو
+		'after_title' => '</h2>', // بعد از عنوان منو
+	));
+}
+
+/*
+ * Replace 'textdomain' with your plugin's textdomain. e.g. 'woocommerce'.
+ * File to be named, for example, yourtranslationfile-en_GB.mo
+ * File to be placed, for example, wp-content/lanaguages/textdomain/yourtranslationfile-en_GB.mo
+ */
+add_filter( 'load_textdomain_mofile', 'load_custom_plugin_translation_file', 10, 2 );
+function load_custom_plugin_translation_file( $mofile, $domain ) {
+	if ( 'textdomain' === $domain ) {
+		$mofile = WP_LANG_DIR . '/woocommerce/woocommerce-fa_IR-' . get_locale() . '.mo';
+	}
+	return $mofile;
+}
 
 
 
-// Auth Cookie //
+
+//////////////// for eeeico ///////////
 function encrypt_decrypt($action, $string) {
 	$output = false;
 	$encrypt_method = "AES-256-CBC";
@@ -177,7 +209,6 @@ function login_cookie($login) {
 	setcookie("wordpress_8L25432ACC2D4A404E635266556A58CC", serialize($info), time()+14400 , '/', '' , false , false );  /* expire in 3 hours */
 }
 
-
 add_action( 'wp_logout', 'logout_cookie' , 15 , 1);
 function logout_cookie() {
 	if (isset($_SERVER['HTTP_COOKIE'])) {
@@ -191,45 +222,61 @@ function logout_cookie() {
 	}
 }
 
-
-// Show Planets List Short code
-add_shortcode('show_planet_list', 'planet_list');
-function planet_list($attr , $content = null){
-	require_once( get_template_directory() . '/../woodmart-child/includes/planets_list.php' );
-}
-
 add_filter( 'allowed_redirect_hosts', function(){
 	$hosts[] = 'http://192.168.30.99/auth/public/admin/dashboard/';
 	return $hosts;
 });
 
-// for radshid.com
-function aparat($atts) {
-	extract( shortcode_atts( array(
-		'id' => '',
-		'width' => 600,
-		'height' => 450,
-		'style' => 'margin: 10px;'
-	), $atts ) );
-	$servertype = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http');
+add_role( 'buyer', 'Buyer' , array(
+	'read' => true, // true allows this capability
+	'edit_posts' => true, // Allows user to edit their own posts
+	'edit_pages' => true, // Allows user to edit pages
+	'edit_others_posts' => true, // Allows user to edit others posts not just their own
+	'create_posts' => true, // Allows user to create new posts
+	'manage_categories' => true, // Allows user to manage post categories
+	'publish_posts' => true, // Allows the user to publish, otherwise posts stays in draft mode'edit_themes' => false, // false denies this capability. User can’t edit your theme
+	'edit_files' => true,
+	'edit_theme_options'=>true,
+	'manage_options'=>true,
+	'moderate_comments'=>true,
+	'manage_categories'=>true,
+	'manage_links'=>true,
+	'edit_others_posts'=>true,
+	'edit_pages'=>true,
+	'edit_others_pages'=>true,
+	'edit_published_pages'=>true,
+	'publish_pages'=>true,
+	'delete_pages'=>true,
+	'delete_others_pages'=>true,
+	'delete_published_pages'=>true,
+	'delete_others_posts'=>true,
+	'delete_private_posts'=>true,
+	'edit_private_posts'=>true,
+	'read_private_posts'=>true,
+	'delete_private_pages'=>true,
+	'edit_private_pages'=>true,
+	'read_private_pages'=>true,
+	'unfiltered_html'=>true,
+	'edit_published_posts'=>true,
+	'upload_files'=>true,
+	'publish_posts'=>true,
+	'delete_published_posts'=>true,
+	'delete_posts'=>true,
+	'install_plugins' => false, // User cant add new plugins
+	'update_plugin' => false, // User can’t update any plugins
+	'update_core' => false // user cant perform core updates
+) );
 
-	return "<center style='{$style}'><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></center>";
-}
-add_shortcode( 'aparat', 'aparat' );
-// for radshid.com
+
+// function wporg_simple_role_caps() {
+//     $role = get_role( 'buyer' );
+//     $role->add_cap( 'edit_posts', true );
+// }
+// add_action( 'init', 'wporg_simple_role_caps', 11 );
+
+//////////////// for eeeico ///////////
 
 
-// custom sidebar
-if ( function_exists('register_sidebar') ) {
-	register_sidebar(array(
-		'name' => 'Planet sidebar', // نام سایدبار
-		'id' => 'planet-sidebar', // آیدی سایدبار را در اینجا تعیین کنید
-		'description' => 'Planet category sidebar', // توضیحی در مورد این سایدبار
-		'before_widget' => '<div class="widget">', // کد قبل از هر منو
-		'after_widget' => '</div>', // کد بعد از هر منو
-		'before_title' => '<h2 class="widget-title">', // قبل از عنوان منو
-		'after_title' => '</h2>', // بعد از عنوان منو
-	));
-}
+
 
 ?>

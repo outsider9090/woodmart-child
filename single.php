@@ -113,7 +113,6 @@ $content_class = woodmart_get_content_class();
 
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
 
 
