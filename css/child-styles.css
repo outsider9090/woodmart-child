@@ -850,16 +850,110 @@ form input{
     border-radius: 0;
 }
 
-.woodmart-toolbar>a, .woodmart-toolbar>div {
-    /*flex: 0 0 17%;*/
+.woodmart-stock-progress-bar .total-sold,.woodmart-stock-progress-bar .progress-area{
+    display: none;
 }
 
+.stock-info{
+    display: none !important;
+}
+
+.woocommerce-Reviews {
+    flex-wrap: wrap;
+}
+
+.woocommerce-Reviews #comments, .woocommerce-Reviews #review_form_wrapper {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+
+/*.top_banner{*/
+    /*max-height: 75px;*/
+    /*background: url("../images/sample-banner.jpg");*/
+    /*background-origin: initial;*/
+/*}*/
+
+
+
+/* Modal Notify */
+.modal_container {
+    position: fixed;
+    bottom: 40px;
+    right: -1000px;
+    width: 400px;
+    background: #ffffff;
+    padding: 0;
+    font-family: vazir, sans-serif, Arial, Helvetica;
+    box-shadow: 0 0 3px #bdbdbd;
+    border-radius: 50px 0 0 50px;
+    z-index: 1000;
+}
+.modal_header {
+    background: #e5490a;
+    width: 100%;
+    padding: 12px;
+    position: relative;
+    height: 50px;
+    line-height: 25px;
+    box-shadow: 0 3px 6px -2px #bdbdbd;
+}
+.modal_header .heading{
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 1.125em;
+    width: 90%;
+    margin: auto;
+    font-family: vazir, sans-serif, Arial, Helvetica;
+}
+.modal_body button{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: transparent;
+    color: #757575;
+    font-size: 2em;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.modal_body button:hover{
+    transform: rotateZ(90deg);
+    box-shadow: none;
+}
+
+.modal_body {
+position: relative;
+    height: 55px;
+    padding: 0;
+}
+.modal_body .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px;
+}
+.modal_body .row img {
+    width: 55px;
+    height: auto;
+    margin: 0 10px;
+}
+.modal_body .row a {
+    margin: 0;
+    line-height: 2;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Modal Notify */
 
 
 /*----------------------------Media Queries----------------------------*/
 
 @media screen and (max-width: 1200px) {
-
     p.cp_text {
         font-size: 16px;
     }
@@ -913,6 +1007,9 @@ form input{
 }
 
 @media screen and (max-width: 1000px) {
+    .modal_container {
+        width: 400px;
+    }
     .article-excerpt p {
         font-size: 12px;
     }
@@ -994,6 +1091,8 @@ form input{
 }
 
 @media screen and (max-width: 768px) {
+
+
     .bigImage img, .smallImage img{
         height: 320px;
     }
@@ -1323,6 +1422,12 @@ form input{
 }
 
 @media screen and (max-width: 400px) {
+    .modal_container {
+        width: 95%;
+    }
+    .modal_body .row a {
+       font-size: 12px;
+    }
     .article-thumbnail {
         width: 30%;
     }

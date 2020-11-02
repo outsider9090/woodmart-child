@@ -18,20 +18,27 @@
 	
 	<div class="website-wrapper">
 
-
-
 		<?php if ( woodmart_needs_header() ): ?>
 
 			<!-- HEADER -->
 			<header <?php woodmart_get_header_classes(); // location: inc/functions.php ?>>
 
-				<?php 
-					whb_generate_header();
-				 ?>
+                <div class="top_banner">
+                    <a href="#">
+<!--                        <img src="--><?php //echo get_stylesheet_directory_uri() . './images/sample-banner.jpg' ?><!--" alt="">-->
+                    </a>
+                </div>
+
+                <?php whb_generate_header(); ?>
+
+                <strong>place2</strong>
 
                 <div class="progress" id="scroll-bar">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+
+
+                <strong>place3</strong>
 
 			</header><!--END MAIN HEADER-->
 			

@@ -127,7 +127,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-
     // Custom tooltip //
     function placeTooltip(x_pos, y_pos) {
         $("#tooltip").css({
@@ -165,12 +164,28 @@ jQuery(document).ready(function($) {
     // Custom tooltip //
 
 
+    /* Notify Modal */
+    setTimeout(function () {
+        if (! getWithExpiry('modal-dismissed')){
+            $('.modal_container').animate({right: '0'}, 400);
+        }
+    },3000);
+    $('.modal_body').find('button').click(function () {
+        $('.modal_container').animate({right: '-1000px'}, 'slow');
+        setWithExpiry('modal-dismissed',true,5*60*60*1000);
+
+    });
+    $('#notify_link').click(function () {
+        $('.modal_container').animate({right: '-1000px'}, 'slow');
+        setWithExpiry('modal-dismissed',true,5*60*60*1000);
+    });
+    /* Notify Modal */
+
 });
 
 
 document.onscroll = function(){
     var pos = getVerticalScrollPercentage(document.body);
-    console.log(pos);
     if (pos <= 100) {
         document.getElementById("scroll-bar").style.visibility = 'visible';
         document.getElementById("scroll-bar").style.width = pos+'%';
@@ -195,6 +210,28 @@ function getVerticalScrollPercentage( elm ){
     return pos;
 }
 
+function setWithExpiry(key, value, ttl) {
+    const now = new Date();
+    const item = {
+        value: value,
+        expiry: now.getTime() + ttl,
+    };
+    localStorage.setItem(key, JSON.stringify(item))
+}
+function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key);
+    if (!itemStr) {
+        return null;
+    }
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+    // compare the expiry time of the item with the current time
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem(key);
+        return null;
+    }
+    return item.value;
+}
 
 
 

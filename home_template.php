@@ -3,8 +3,8 @@
 
 /* Variables */
 $excerptLength = 45;         // طول خلاصه مطلب
-$Grid_catID = 52;       // آیدی دسته بندی گریدویو    8562
-$Posts_catID = 52; // آیدی دسته بندی پست ها    209
+$Grid_catID = 16;       // آیدی دسته بندی گریدویو    8562
+$Posts_catID = 16; // آیدی دسته بندی پست ها    209
 $paged_type = 'page';       // "page" in local AND "paged" in Host
 $posts_per_page = 3; // تعداد پست های صفحه اصلی
 /* Variables */
@@ -298,6 +298,7 @@ get_header(); ?>
                                                         </span>
                                                     </span>
                                                 </a>
+                                                <span class="post-date"> <?php echo 'در '. get_the_date( 'j-M-Y' ); ?> </span>
                                             </li>
                                             <li>
                                                 <span class="meta-reply">
@@ -306,6 +307,7 @@ get_header(); ?>
                                                         <span class="replies-count-label">دیدگاه</span></a>
                                                 </span>
                                             </li>
+
                                         </ul>
                                     </div>
 
@@ -323,7 +325,6 @@ get_header(); ?>
                                     <div class="entry-content woodmart-entry-content">
 										<?php the_excerpt(); ?>
                                     </div>
-
                                 </div>
                         </article>
 

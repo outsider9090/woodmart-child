@@ -100,7 +100,6 @@ $content_class = woodmart_get_content_class();
 		}
 		?>
 
-
 		<?php comments_template(); ?>
 
 	<?php endwhile; ?>

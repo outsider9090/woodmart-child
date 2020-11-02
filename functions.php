@@ -14,7 +14,7 @@ function load_scripts_styles() {
 		get_stylesheet_directory_uri() . '/js/toastnotify.min.js',
 		array( 'jquery' )
 	);
-	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/child-scripts.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/child-scripts.js', array('jquery'), '1.0.2', true );
 	wp_localize_script( 'script-name', 'MyAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( 'my-special-string' )
