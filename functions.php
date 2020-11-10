@@ -7,14 +7,14 @@ function load_scripts_styles() {
 	$parent_style = 'parent-style';
 	wp_enqueue_style( $parent_style , get_stylesheet_directory_uri() . '/css/child-styles.css');
 	wp_enqueue_style( 'toastnotify', get_stylesheet_directory_uri() . '/css/toastnotify.min.css', array( $parent_style ));
-	wp_enqueue_style( $parent_style, get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
+	wp_enqueue_style( $parent_style, get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), '1.0.1' );
 	// Scripts
 	wp_enqueue_script(
 		'toastnotify',
 		get_stylesheet_directory_uri() . '/js/toastnotify.min.js',
 		array( 'jquery' )
 	);
-	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/child-scripts.js', array('jquery'), '1.0.2', true );
+	wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/child-scripts.js', array('jquery'), '1.0.3', true );
 	wp_localize_script( 'script-name', 'MyAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( 'my-special-string' )

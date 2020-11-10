@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/home_template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/child-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/child-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-zplanet.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-zplanet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,41 +20,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1464">
-              <caret line="64" column="87" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="87" />
+            <state relative-caret-position="83">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="360">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="n#planet_list#0;n#!!top" />
-                <element signature="e#4304#4800#0#PHP" />
                 <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/child-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="871" selection-start-line="871" selection-start-column="2" selection-end-line="875" selection-end-column="3" />
-              <folding>
-                <element signature="e#17635#18087#0" />
-                <element signature="e#18089#18526#0" />
-                <element signature="e#18528#18987#0" />
-                <element signature="e#18989#19957#0" />
-                <element signature="e#19959#21503#0" />
-                <element signature="e#21505#22365#0" />
-                <element signature="e#22367#24361#0" />
-                <element signature="e#24363#25841#0" />
-              </folding>
+            <state relative-caret-position="281">
+              <caret line="877" lean-forward="true" selection-start-line="877" selection-end-line="877" />
             </state>
           </provider>
         </entry>
@@ -65,12 +51,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="179" column="57" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
+            <state relative-caret-position="1032">
+              <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="193" selection-end-column="22" />
               <folding>
                 <element signature="e#73#2579#0" />
                 <element signature="e#2619#5007#0" />
-                <element signature="e#6756#7077#0" />
                 <element signature="n#!!block;n#getVerticalScrollPercentage#0" />
               </folding>
             </state>
@@ -88,7 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>post-share-container</find>
       <find>40</find>
       <find>short</find>
       <find>twitter_intent</find>
@@ -118,6 +102,7 @@
       <find>re</find>
       <find>font-family</find>
       <find>getItem</find>
+      <find>modal_container</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -187,12 +172,12 @@
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/home_template.php" />
         <option value="$PROJECT_DIR$/single-zplanet.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/css/modal-notify.css" />
-        <option value="$PROJECT_DIR$/css/child-styles.css" />
-        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/js/child-scripts.js" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/css/child-styles.css" />
       </list>
     </option>
   </component>
@@ -218,12 +203,20 @@
             <path>
               <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
               <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
               <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
@@ -248,11 +241,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images\timeline" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\assets" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,6 +330,8 @@
       <workItem from="1600689535860" duration="17000" />
       <workItem from="1604211485847" duration="14155000" />
       <workItem from="1604296672055" duration="8367000" />
+      <workItem from="1604311516813" duration="5979000" />
+      <workItem from="1604467156871" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -398,13 +393,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409840000" />
+    <option name="totallyTimeSpent" value="416737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -649,13 +644,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/modal-notify.css" />
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/single-zplanet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
@@ -663,55 +651,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="871" selection-start-line="871" selection-start-column="2" selection-end-line="875" selection-end-column="3" />
-          <folding>
-            <element signature="e#17635#18087#0" />
-            <element signature="e#18089#18526#0" />
-            <element signature="e#18528#18987#0" />
-            <element signature="e#18989#19957#0" />
-            <element signature="e#19959#21503#0" />
-            <element signature="e#21505#22365#0" />
-            <element signature="e#22367#24361#0" />
-            <element signature="e#24363#25841#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/isee-logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/fonts/font-awesome/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1464">
-          <caret line="64" column="87" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="87" />
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="179" column="57" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
-          <folding>
-            <element signature="e#73#2579#0" />
-            <element signature="e#2619#5007#0" />
-            <element signature="e#6756#7077#0" />
-            <element signature="n#!!block;n#getVerticalScrollPercentage#0" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="n#planet_list#0;n#!!top" />
-            <element signature="e#4304#4800#0#PHP" />
             <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="193" selection-end-column="22" />
+          <folding>
+            <element signature="e#73#2579#0" />
+            <element signature="e#2619#5007#0" />
+            <element signature="n#!!block;n#getVerticalScrollPercentage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="877" lean-forward="true" selection-start-line="877" selection-end-line="877" />
         </state>
       </provider>
     </entry>

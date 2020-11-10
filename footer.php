@@ -56,22 +56,24 @@
 	</footer>
 
 
-<!-- Notify Modal -->
+    <!-- Notify Modal -->
     <div class="modal_container" role="document">
-            <!--Body-->
-            <div class="modal_body">
-                <div class="row">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/images/isee-logo.png'  ; ?>" alt="آی سی سیسوگ">
-                    <a href="https://isee.sisoog.com/" target="_blank" id="notify_link">آی سی Isee - موتور جستجو قطعات الکترونیکی</a>
-                </div>
-                <div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="white-text">×</span>
-                    </button>
-                </div>
+        <!--Body-->
+        <div class="modal_body">
+            <div class="row">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/images/isee-logo.png'  ; ?>" alt="آی سی سیسوگ">
+                <a href="https://isee.sisoog.com/" target="_blank" id="notify_link">آی سی Isee - موتور جستجو قطعات الکترونیکی</a>
             </div>
+            <div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">
+                            <i class="fa fa-close"></i>
+                        </span>
+                </button>
+            </div>
+        </div>
     </div>
-<!-- Notify Modal -->
+    <!-- Notify Modal -->
 
 
 <?php endif ?>

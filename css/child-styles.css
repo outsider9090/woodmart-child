@@ -880,7 +880,7 @@ form input{
 /* Modal Notify */
 .modal_container {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: -1000px;
     width: 400px;
     background: #ffffff;
@@ -910,17 +910,17 @@ form input{
 .modal_body button{
     position: absolute;
     left: 0;
-    top: 8px;
+    top: 4px;
     background-color: transparent;
     color: #757575;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -o-transition: 0.3s ease;
 }
 .modal_body button:hover{
-    transform: rotateZ(90deg);
+    /*transform: rotateZ(90deg);*/
     box-shadow: none;
 }
 
@@ -1009,6 +1009,7 @@ position: relative;
 @media screen and (max-width: 1000px) {
     .modal_container {
         width: 400px;
+        bottom: 65px;
     }
     .article-excerpt p {
         font-size: 12px;
@@ -1091,7 +1092,6 @@ position: relative;
 }
 
 @media screen and (max-width: 768px) {
-
 
     .bigImage img, .smallImage img{
         height: 320px;
@@ -1423,10 +1423,10 @@ position: relative;
 
 @media screen and (max-width: 400px) {
     .modal_container {
-        width: 95%;
+        width: 96%;
     }
     .modal_body .row a {
-       font-size: 12px;
+       font-size: 10px;
     }
     .article-thumbnail {
         width: 30%;

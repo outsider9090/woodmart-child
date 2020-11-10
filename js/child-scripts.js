@@ -166,22 +166,35 @@ jQuery(document).ready(function($) {
 
     /* Notify Modal */
     setTimeout(function () {
-        if (! getWithExpiry('modal-dismissed')){
-            $('.modal_container').animate({right: '0'}, 400);
-        }
+        $('.modal_container').animate({right: '0'}, 400);
     },3000);
     $('.modal_body').find('button').click(function () {
-        $('.modal_container').animate({right: '-1000px'}, 'slow');
-        setWithExpiry('modal-dismissed',true,5*60*60*1000);
-
+        var icon = $(this).find('i');
+        icon.slideNotif(icon);
     });
     $('#notify_link').click(function () {
-        $('.modal_container').animate({right: '-1000px'}, 'slow');
-        setWithExpiry('modal-dismissed',true,5*60*60*1000);
+        var icon = $('.modal_body').find('button').find('i');
+        icon.slideNotif(icon);
     });
+    $.fn.slideNotif = function(elm)
+    {
+        var containerWidth = $('.modal_container').css('width');
+        var fullWidth = containerWidth.split('px');
+        var slideRight = fullWidth[0] - 45;
+        if (elm.hasClass('fa-close')) {
+            $('.modal_container').animate({right: '-' + slideRight + 'px'}, 300);
+            elm.removeClass('fa-close').addClass('fa-arrow-left');
+            $('#notify_link').css('display' , 'none');
+        } else {
+            $('.modal_container').animate({right: '0'}, 300);
+            elm.removeClass('fa-arrow-left').addClass('fa-close');
+            $('#notify_link').css('display' , 'block');
+        }
+    };
     /* Notify Modal */
 
 });
+
 
 
 document.onscroll = function(){
@@ -210,28 +223,6 @@ function getVerticalScrollPercentage( elm ){
     return pos;
 }
 
-function setWithExpiry(key, value, ttl) {
-    const now = new Date();
-    const item = {
-        value: value,
-        expiry: now.getTime() + ttl,
-    };
-    localStorage.setItem(key, JSON.stringify(item))
-}
-function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key);
-    if (!itemStr) {
-        return null;
-    }
-    const item = JSON.parse(itemStr);
-    const now = new Date();
-    // compare the expiry time of the item with the current time
-    if (now.getTime() > item.expiry) {
-        localStorage.removeItem(key);
-        return null;
-    }
-    return item.value;
-}
 
 
 
