@@ -165,8 +165,11 @@ jQuery(document).ready(function($) {
 
 
     /* Notify Modal */
+    var containerWidth = $('.modal_container').css('width');
+    var fullWidth = containerWidth.split('px');
+    var slideRight = fullWidth[0] - 45;
     setTimeout(function () {
-        $('.modal_container').animate({right: '0'}, 400);
+        $('.modal_container').animate({right: '-' + slideRight + 'px'}, 400);
     },3000);
     $('.modal_body').find('button').click(function () {
         var icon = $(this).find('i');
@@ -178,9 +181,6 @@ jQuery(document).ready(function($) {
     });
     $.fn.slideNotif = function(elm)
     {
-        var containerWidth = $('.modal_container').css('width');
-        var fullWidth = containerWidth.split('px');
-        var slideRight = fullWidth[0] - 45;
         if (elm.hasClass('fa-close')) {
             $('.modal_container').animate({right: '-' + slideRight + 'px'}, 300);
             elm.removeClass('fa-close').addClass('fa-arrow-left');
@@ -192,7 +192,6 @@ jQuery(document).ready(function($) {
         }
     };
     /* Notify Modal */
-
 });
 
 

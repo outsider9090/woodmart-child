@@ -67,7 +67,7 @@
             <div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="white-text">
-                            <i class="fa fa-close"></i>
+                            <i class="fa fa-arrow-left"></i>
                         </span>
                 </button>
             </div>

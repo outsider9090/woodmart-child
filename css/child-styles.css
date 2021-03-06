@@ -1510,6 +1510,22 @@ position: relative;
         font-size: 10px;
     }
 
+    /* full width comments body */
+    .comment-list .comment{
+        padding:0;
+    }
+    div#comments>ol>li {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+    }
+    .comment-list .comment .comment-body{
+        border-radius: 0;
+    }
+    #comments .avatar, .woodmart-user-panel .avatar {
+        margin-right: 18px !important;
+    }
+    /* full width comments body */
+
 }
 
 @media screen and (max-width: 300px){
