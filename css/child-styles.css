@@ -951,6 +951,31 @@ position: relative;
 /* Modal Notify */
 
 
+
+/* Shop Filters Plugin */
+.wpfMainWrapper .wpfFilterButton.wpfButton,.wpfMainWrapper .wpfClearButton.wpfButton{
+    font-size: 12px !important;
+    height: auto;
+    min-height: 60px;
+}
+.wpfMainWrapper .wpfFilterContent select{
+    border-radius: 0;
+    border-color: #bdbdbd;
+}
+.wpfMainWrapper .ui-slider.ui-widget-content .ui-slider-handle {
+    border-radius: 50px;
+}
+.woodmart-active-filters {
+    display: none;
+}
+
+.wpfMainWrapper #wpfOverlayText {
+    font-size: 30px !important;
+}
+/* Shop Filters Plugin */
+
+
+
 /*----------------------------Media Queries----------------------------*/
 
 @media screen and (max-width: 1200px) {
