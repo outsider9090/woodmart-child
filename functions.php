@@ -265,7 +265,7 @@ add_role( 'buyer', 'Buyer' , array(
 	'install_plugins' => false, // User cant add new plugins
 	'update_plugin' => false, // User can’t update any plugins
 	'update_core' => false // user cant perform core updates
-) );
+));
 
 
 // function wporg_simple_role_caps() {

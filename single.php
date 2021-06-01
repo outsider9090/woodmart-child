@@ -43,7 +43,7 @@ $content_class = woodmart_get_content_class();
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 support">
-                        <a href="https://sisoog.com/%DA%A9%D9%85%DA%A9-%D8%A8%D9%87-%D8%B3%DB%8C%D8%B3%D9%88%DA%AF/">
+                        <a href="http://localhost/wordpress/test-zarin?author_id=<?= $post->post_author; ?>&user_name=<?= get_the_author_meta('display_name', $post->post_author); ?>"  >
                             حمایت از سیسوگ
                             <img src="<?php echo get_stylesheet_directory_uri().'/images/support.png'; ?>" alt="حمایت از سیسوگ">
                         </a>

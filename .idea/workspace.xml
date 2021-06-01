@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="improved scroll-bar functionality and ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="1680">
               <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
             </state>
           </provider>
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4056">
-              <caret line="171" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="4920">
+              <caret line="207" selection-start-line="207" selection-end-line="207" />
               <folding>
                 <element signature="n#planet_list#0;n#!!top" />
               </folding>
@@ -35,21 +36,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+        <entry file="file://$PROJECT_DIR$/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="966" column="1" lean-forward="true" selection-start-line="966" selection-start-column="1" selection-end-line="966" selection-end-column="1" />
+            <state relative-caret-position="311">
+              <caret line="45" column="181" lean-forward="true" selection-start-line="45" selection-start-column="181" selection-end-line="45" selection-end-column="181" />
               <folding>
-                <element signature="e#17694#18146#0" />
-                <element signature="e#18148#18585#0" />
-                <element signature="e#18587#19070#0" />
-                <element signature="e#19072#19990#0" />
-                <element signature="e#19992#21486#0" />
-                <element signature="e#21488#22348#0" />
-                <element signature="e#22350#24344#0" />
-                <element signature="e#24346#25824#0" />
-                <element signature="e#25826#27786#0" />
-                <element signature="e#27788#28135#0" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home_template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+              <folding>
+                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -58,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="696">
               <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding>
                 <element signature="e#2619#5007#0" />
@@ -78,13 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>twitter_intent</find>
-      <find>row</find>
-      <find>timeline</find>
-      <find>ريال</find>
-      <find>1394</find>
-      <find>copyStringToClipboard</find>
-      <find>play</find>
       <find>short_link</find>
       <find>myFunction</find>
       <find>audio</find>
@@ -108,6 +105,13 @@
       <find>scroll-bar</find>
       <find>400</find>
       <find>400px</find>
+      <find>$wpdb-&gt;insert</find>
+      <find>post_like_table</find>
+      <find>jalali</find>
+      <find>jDate</find>
+      <find>WHERE</find>
+      <find>telegramJoin</find>
+      <find>author</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -174,19 +178,19 @@
         <option value="$PROJECT_DIR$/sidebar-new.php" />
         <option value="$PROJECT_DIR$/taxonomy-zcategory.php" />
         <option value="$PROJECT_DIR$/sidebar-planet.php" />
-        <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/home_template.php" />
         <option value="$PROJECT_DIR$/single-zplanet.php" />
         <option value="$PROJECT_DIR$/css/modal-notify.css" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/js/child-scripts.js" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/child-styles.css" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/single.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -198,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +213,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,7 +335,16 @@
       <workItem from="1615026132199" duration="12000" />
       <workItem from="1615898884739" duration="20000" />
       <workItem from="1615966829108" duration="29000" />
-      <workItem from="1617522883979" duration="1430000" />
+      <workItem from="1617522883979" duration="1874000" />
+      <workItem from="1617605230240" duration="119000" />
+      <workItem from="1617616489248" duration="659000" />
+      <workItem from="1617688310484" duration="1237000" />
+      <workItem from="1617690137637" duration="193000" />
+      <workItem from="1617701997925" duration="1223000" />
+      <workItem from="1620623294622" duration="659000" />
+      <workItem from="1621685874344" duration="802000" />
+      <workItem from="1621771159309" duration="474000" />
+      <workItem from="1622543713468" duration="5389000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -393,13 +406,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431329000" />
+    <option name="totallyTimeSpent" value="442528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -411,7 +424,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.25893825" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32936078" />
@@ -609,28 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#!!top" />
-            <element signature="e#3959#4424#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4944">
-          <caret line="300" selection-start-line="300" selection-end-line="301" />
-          <folding>
-            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/timeline/next_v.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -668,10 +659,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23232">
+          <caret line="968" column="17" selection-start-line="968" selection-start-column="17" selection-end-line="968" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4056">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="4920">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
           <folding>
             <element signature="n#planet_list#0;n#!!top" />
           </folding>
@@ -680,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="696">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding>
             <element signature="e#2619#5007#0" />
@@ -688,28 +693,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/home_template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state relative-caret-position="360">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+    <entry file="file://$PROJECT_DIR$/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="966" column="1" lean-forward="true" selection-start-line="966" selection-start-column="1" selection-end-line="966" selection-end-column="1" />
+        <state relative-caret-position="311">
+          <caret line="45" column="181" lean-forward="true" selection-start-line="45" selection-start-column="181" selection-end-line="45" selection-end-column="181" />
           <folding>
-            <element signature="e#17694#18146#0" />
-            <element signature="e#18148#18585#0" />
-            <element signature="e#18587#19070#0" />
-            <element signature="e#19072#19990#0" />
-            <element signature="e#19992#21486#0" />
-            <element signature="e#21488#22348#0" />
-            <element signature="e#22350#24344#0" />
-            <element signature="e#24346#25824#0" />
-            <element signature="e#25826#27786#0" />
-            <element signature="e#27788#28135#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
