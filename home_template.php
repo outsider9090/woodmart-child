@@ -230,7 +230,7 @@ get_header(); ?>
 					'posts_per_page' => $posts_per_page,
 					'cat'         => $Posts_catID,
 					'paged' => $paged,
-					'post_parent' => $parent
+					'post_parent' => 'parent'
 				);
 				$category = new WP_Query($args);
 				?>

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="improved scroll-bar functionality and ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/home_template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+            <state relative-caret-position="1296">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -35,26 +36,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="45" column="181" lean-forward="true" selection-start-line="45" selection-start-column="181" selection-end-line="45" selection-end-column="181" />
+            <state relative-caret-position="1080">
+              <caret line="45" column="89" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home_template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home_template.php">
+        <entry file="file://$PROJECT_DIR$/css/child-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-              <folding>
-                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -82,9 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>short_link</find>
-      <find>myFunction</find>
-      <find>audio</find>
       <find>file-pass-msg</find>
       <find>small span</find>
       <find>vazir</find>
@@ -95,7 +99,6 @@
       <find>scrollTop</find>
       <find>&lt;art</find>
       <find>scroll</find>
-      <find>post-date</find>
       <find>j/M/Y</find>
       <find>like</find>
       <find>re</find>
@@ -112,6 +115,10 @@
       <find>WHERE</find>
       <find>telegramJoin</find>
       <find>author</find>
+      <find>entry-meta-list</find>
+      <find>.pagination li</find>
+      <find>parent</find>
+      <find>post-date</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -178,15 +185,15 @@
         <option value="$PROJECT_DIR$/sidebar-new.php" />
         <option value="$PROJECT_DIR$/taxonomy-zcategory.php" />
         <option value="$PROJECT_DIR$/sidebar-planet.php" />
-        <option value="$PROJECT_DIR$/home_template.php" />
         <option value="$PROJECT_DIR$/single-zplanet.php" />
         <option value="$PROJECT_DIR$/css/modal-notify.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/js/child-scripts.js" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/css/child-styles.css" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/single.php" />
+        <option value="$PROJECT_DIR$/home_template.php" />
+        <option value="$PROJECT_DIR$/css/child-styles.css" />
       </list>
     </option>
   </component>
@@ -202,18 +209,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +341,11 @@
       <workItem from="1620623294622" duration="659000" />
       <workItem from="1621685874344" duration="802000" />
       <workItem from="1621771159309" duration="474000" />
-      <workItem from="1622543713468" duration="5389000" />
+      <workItem from="1622543713468" duration="5932000" />
+      <workItem from="1622613870510" duration="3524000" />
+      <workItem from="1623234263160" duration="1229000" />
+      <workItem from="1623237454343" duration="3321000" />
+      <workItem from="1623308292365" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -406,13 +407,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442528000" />
+    <option name="totallyTimeSpent" value="451167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -520,13 +521,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/archive-zplanet.php" />
     <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css" />
-    <entry file="file://$PROJECT_DIR$/archive22.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/infs.jpeg" />
     <entry file="file://$PROJECT_DIR$/images/infs.jpg" />
     <entry file="file://$PROJECT_DIR$/comments.php">
@@ -596,15 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ultimate-member/email/checkmail_email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planets_template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -659,17 +644,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+    <entry file="file://$PROJECT_DIR$/archive22.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23232">
-          <caret line="968" column="17" selection-start-line="968" selection-start-column="17" selection-end-line="968" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ultimate-member/email/checkmail_email.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state relative-caret-position="1296">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -683,6 +671,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" column="89" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
@@ -693,22 +688,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home_template.php">
+    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/single.php">
+    <entry file="file://$PROJECT_DIR$/home_template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="45" column="181" lean-forward="true" selection-start-line="45" selection-start-column="181" selection-end-line="45" selection-end-column="181" />
+        <state relative-caret-position="288">
+          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
           </folding>
         </state>
       </provider>
