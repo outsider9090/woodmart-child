@@ -24,7 +24,7 @@ $content_class = woodmart_get_content_class();
 						<?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
                             <div class="single-post-social">
 								<?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(
-									array('type' => 'share', 'tooltip' => 'yes', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
+									array('type' => 'share', 'tooltip' => 'no', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
 								?>
                             </div>
 						<?php endif ?>

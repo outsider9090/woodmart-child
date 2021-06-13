@@ -5,6 +5,7 @@ defined("ABSPATH") || exit();
 function load_scripts_styles() {
 	// Styles
 	$parent_style = 'parent-style';
+	wp_enqueue_style( 'bootstrap' , get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
 	wp_enqueue_style( $parent_style , get_stylesheet_directory_uri() . '/css/child-styles.css');
 	wp_enqueue_style( 'toastnotify', get_stylesheet_directory_uri() . '/css/toastnotify.min.css', array( $parent_style ));
 	wp_enqueue_style( $parent_style, get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), '1.0.1' );

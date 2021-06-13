@@ -199,21 +199,22 @@ function wp_bootstrap4_pagination( $args = array() , $paged_type , $posts_per_pa
                             </a>
 
                             <div class="hovered-social-icons">
-                                <div class="woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">
-                                    <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-facebook"> <i class="fa fa-facebook"></i> <span class="woodmart-social-icon-name">Facebook</span></a>
-                                    <a rel="nofollow" href="https://twitter.com/share?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-twitter"> <i class="fa fa-twitter"></i> <span class="woodmart-social-icon-name">Twitter</span> </a>
-                                    <a rel="nofollow" href="mailto:?subject=Check%20this%20<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-email"> <i class="fa fa-envelope"></i> <span class="woodmart-social-icon-name">Email</span> </a>
-                                    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-linkedin"> <i class="fa fa-linkedin"></i> <span class="woodmart-social-icon-name">linkedin</span> </a>
-                                    <a rel="nofollow" href="https://wa.me/?text=<?php esc_url(the_permalink()); ?>" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp"> <i class="fa fa-whatsapp"></i> <span class="woodmart-social-icon-name">WhatsApp</span> </a>
-                                    <a rel="nofollow" href="https://telegram.me/share/url?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-tg"> <i class="fa fa-telegram"></i> <span class="woodmart-social-icon-name">Telegram</span> </a>
+                                <div class="wd-social-icons woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">
+                                    <a rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_url(the_permalink()); ?>" target="_blank" class=" wd-social-icon social-facebook"> <span class="wd-icon"></span></a>
+                                    <a rel="noopener noreferrer nofollow" href="https://twitter.com/share?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-twitter"> <span class="wd-icon"></span> </a>
+                                    <a rel="noopener noreferrer nofollow" href="mailto:?subject=Check%20this%20<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-email"> <span class="wd-icon"></span> </a>
+                                    <a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-linkedin"> <span class="wd-icon"></span> </a>
+                                    <a rel="noopener noreferrer nofollow" href="https://wa.me/?text=<?php esc_url(the_permalink()); ?>" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp"> <span class="wd-icon"></span> </a>
+                                    <a rel="noopener noreferrer nofollow" href="https://telegram.me/share/url?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-tg"> <span class="wd-icon"></span> </a>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="planet_right">
                             <article class="article_container">
                                 <div class="article">
-                                    <header class="entry-header">
+                                    <header class="entry-header text-right">
                                         <h3 class="planet-title title d-block">
                                             <a href="<?php echo esc_url(get_permalink( )); ?>" rel="bookmark">
 												<?php the_title( '', '', true ); ?>

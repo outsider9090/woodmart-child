@@ -1,8 +1,3 @@
-/*
-Theme Name: Woodmart Child
-Template: woodmart
-*/
-
 @font-face{ font-family: 'vazir'; src:url('fonts/vazir.eot?#') format('eot'), url('fonts/vazir.woff') format('woff'), url('fonts/vazir.ttf') format('truetype');}
 @font-face{ font-family: 'yekan'; src:url('fonts/yekan.eot?#') format('eot'), url('fonts/yekan.woff') format('woff'), url('fonts/yekan.ttf') format('truetype');}
 
@@ -72,72 +67,193 @@ Template: woodmart
 	font-family: iranyekan;
 	font-style: normal;
 	font-weight: 600;
-	src: url('fonts/yekan/iranyekanwebbold.eot');
-	src: url('fonts/yekan/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/yekan/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/yekan/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/yekan/iranyekanwebbold.ttf') format('truetype');
+	src: url('fonts/yekan/eot/iranyekanwebboldfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanwebboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebboldfanum.ttf') format('truetype');
 }
+
 @font-face {
 	font-family: iranyekan;
 	font-style: normal;
 	font-weight: 300;
-	src: url('fonts/yekan/iranyekanweblight.eot');
-	src: url('fonts/yekan/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/yekan/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/yekan/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/yekan/iranyekanweblight.ttf') format('truetype');
+	src: url('fonts/yekan/eot/iranyekanweblightfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanweblightfanum.ttf') format('truetype');
 }
+
 @font-face {
 	font-family: iranyekan;
 	font-style: normal;
 	font-weight: normal;
-	src: url('fonts/yekan/iranyekanwebregular.eot');
-	src: url('fonts/yekan/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/yekan/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/yekan/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/yekan/iranyekanwebregular.ttf') format('truetype');
+	src: url('fonts/yekan/eot/iranyekanwebregularfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanwebregularfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebregularfanum.ttf') format('truetype');
 }
 
-/**********************************************/
+
 @font-face {
-	font-family: Sahel;
+	font-family: iranyekan en;
 	font-style: normal;
-	font-weight: 600;
-	src: url('fonts/sahel/Sahel-Bold.eot');
-	src: url('fonts/sahel/Sahel-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/sahel/Sahel-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/sahel/Sahel-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/sahel/Sahel-Bold.ttf') format('truetype');
+	font-weight: bold;
+	src: url('fonts/yekan/eot/iranyekanwebbold.eot');
+	src: url('fonts/yekan/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebbold.ttf') format('truetype');
 }
+
 @font-face {
-	font-family: Sahel;
+	font-family: iranyekan en;
 	font-style: normal;
-	font-weight: 900;
-	src: url('fonts/sahel/Sahel-Black.eot');
-	src: url('fonts/sahel/Sahel-Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/sahel/Sahel-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/sahel/Sahel-Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/sahel/Sahel-Black.ttf') format('truetype');
+	font-weight: 100;
+	src: url('fonts/yekan/eot/iranyekanwebthin.eot');
+	src: url('fonts/yekan/eot/iranyekanwebthin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebthin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebthin.ttf') format('truetype');
 }
+
 @font-face {
-	font-family: Sahel;
+	font-family: iranyekan en;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/yekan/eot/iranyekanweblight.eot');
+	src: url('fonts/yekan/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan en;
 	font-style: normal;
 	font-weight: normal;
-	src: url('fonts/sahel/Sahel.eot');
-	src: url('fonts/sahel/Sahel.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/sahel/Sahel.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/sahel/Sahel.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/sahel/Sahel.ttf') format('truetype');
+	src: url('fonts/yekan/eot/iranyekanwebregular.eot');
+	src: url('fonts/yekan/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebregular.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: iranyekan en;
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/yekan/eot/iranyekanwebmedium.eot');
+	src: url('fonts/yekan/eot/iranyekanwebmedium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebmedium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebmedium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan en;
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/yekan/eot/iranyekanwebextrabold.eot');
+	src: url('fonts/yekan/eot/iranyekanwebextrabold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebextrabold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebextrabold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: shabnam;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/shabnam/Shabnam-Bold-FD.eot');
+	src: url('fonts/shabnam/Shabnam-Bold-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/shabnam/Shabnam-Bold-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/shabnam/Shabnam-Bold-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/shabnam/Shabnam-Bold-FD.ttf') format('truetype');
+}
+@font-face {
+	font-family: shabnam;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/shabnam/Shabnam-Light-FD.eot');
+	src: url('fonts/shabnam/Shabnam-Light-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/shabnam/Shabnam-Light-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/shabnam/Shabnam-Light-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/shabnam/Shabnam-Light-FD.ttf') format('truetype');
+}
+@font-face {
+	font-family: shabnam;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/shabnam/Shabnam-FD.eot');
+	src: url('fonts/shabnam/Shabnam-FD.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/shabnam/Shabnam-FD.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/shabnam/Shabnam-FD.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/shabnam/Shabnam-FD.ttf') format('truetype');
+}
+
+
+/*
+IRANSans En
+*/
+
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/eot/IRANSansWeb_Black.eot');
+	src: url('fonts/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/IRANSansWeb_Bold.eot');
+	src: url('fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/eot/IRANSansWeb_Medium.eot');
+	src: url('fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/IRANSansWeb_Light.eot');
+	src: url('fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: 200;
+	src: url('fonts/eot/IRANSansWeb_UltraLight.eot');
+	src: url('fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans EN;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/IRANSansWeb.eot');
+	src: url('fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
 
 label {
     text-align: right;
 }
-
-.tp-tab.selected .tp-tab-title,.tp-tab-title:hover { background-color: #fff !important; } .tp-tab.selected .tp-tab-title:before,.tp-tab-title:hover:before { content: ''; width: 18px; height: 18px; transform: rotate(45deg); background-color: #fff; top: -7px; position: absolute; border-radius: 3px; left: 50%; overflow: visible; margin-left: -9px;}
-
 input[type=text], input[type=email], input[type=password], input[type=search], input[type=number], input[type=url], input[type=tel], input[type=date], select, textarea {
     background: #fff;
 }
@@ -162,6 +278,10 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 }
 .post-single-page .entry-title {
     font-size: 22px;
+	text-align: right;
+}
+.post-single-page {
+    text-align: right;
 }
 .mega-menu-list .sub-sub-menu li a, .menu-mega-dropdown .sub-sub-menu li a {
     padding: 5px 0;
@@ -170,7 +290,11 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     font-size: 34px;
 }
 .product-image-summary .entry-title {
-    font-size: 22px;
+    font-size: 18px;
+}
+.product-image-summary .woodmart-after-add-to-cart, .product-image-summary .woodmart-before-add-to-cart {
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 .tabs-layout-tabs .tabs {
     text-align: right;
@@ -183,8 +307,8 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 }
 
 .woodmart-sidebar-content .widget {
-	padding: 20px;
-	box-shadow: 0 1px 1px 1px #e6e6e6;
+    padding: 20px;
+    box-shadow: 0 0px 1px 1px #e6e6e6;
 }
 .woodmart-sidebar-content .widget-title {
 	background: rgba(125, 125, 125, 0.15);
@@ -205,21 +329,18 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
 	right:auto;
 }
 }
-
 .tabs-layout-tabs .tabs li a {
-    width: 100px;
     text-align: center;
 }
-
 .tabs-layout-tabs .tabs li a:after {
     top: 100%;
     bottom: 0;
 }
+.tabs-layout-tabs #tab-additional_information .shop_attributes {
+    max-width: 100%;
+}
 #tab-additional_information .shop_attributes td {
     text-align: right;
-}
-.tabs-layout-tabs #tab-additional_information .shop_attributes {
-    max-width: 850px;
 }
 .woocommerce-order-pay .entry-content>.woocommerce {
     max-width: 850px;
@@ -250,205 +371,146 @@ ul.order_details li:last-child {
     max-width: 100% !important;
 }
 
-.post-slide .entry-title {
+.owl-items-lg-4 .post-slide .post-title {
     font-size: 14px !important;
 	font-weight:600;
 }
-.tp-tab-title { padding: 19px 10px !important; font-family: 'iranyekan' !important; font-weight: normal !important; background: rgba(66,73,89,.8) !important;} .tp-tab-mask {overflow:visible !important; } .tp-tab.selected .tp-tab-title,.tp-tab-title:hover { background-color: #fff !important; } .tp-tab.selected .tp-tab-title:before,.tp-tab-title:hover:before { content: ''; width: 18px; height: 18px; transform: rotate(45deg); background-color: #fff; top: -7px; position: absolute; border-radius: 3px; left: 50%; overflow: visible; margin-left: -9px;}
-
-/***********************************************************************/
-/***********************************************************************/
-/***********************************************************************/
-/***********************************************************************/
-
-.blog-design-default.has-post-thumbnail .article-body-container {
-    margin-top: 0px;
-	width: 100%;
-    height: 100%;
+.zeus .tp-tab-title {
+    font-family: inherit !important;
 }
 
-.article-inner {
-    border: 1px solid;
-	border-color: #ddd;
-	background: #fff;
+.dokan-dashboard-wrap .dokan-dash-sidebar ul.dokan-dashboard-menu li.active:after {
+    left: 0;
+    right: auto;
+}
+.woodmart-single-footer .tags-list {
+    font-size: unset;
+	color:#fff;
+}
+.single-post img.wp-post-image {
+	width:100%;
 }
 
-.woocommerce-my-account-wrapper{
-    border: 1px solid;
-	border-color: #ddd;
-	background: #fff;
-	padding: 25px;
+.menu-mega-dropdown .sub-menu>li>a:before {
+	position: absolute;
+    top: 11px;
+    font-weight: 600;
+    font-size: 8px;
+    right: -13px;
+    font-family: woodmart-font;
+    content: "\f114";
+}
+.wd-show-cat .wd-nav-vertical>li>a:after {
+    -webkit-transform: rotate(
+0deg
+);
+    transform: rotate(
+0deg
+);
+}
+@media (max-width: 1200px) {
+.tp-tabs {
+    display: none;
+}
+}
+@media (max-width: 768px) {
+.woocommerce-ordering select {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    z-index: 24324;
+    background: #1110;
+    border: none;
+    background-image: none;
+    font-weight: 400;
+    font-size: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-.um {
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid;
-	border-color: #ddd;
+.woocommerce-ordering:after {
+    position: relative;
+    margin-top: 0;
+    color: #2d2a2a;
+    font-size: 20px;
+    content: "\f119";
+    font-family: woodmart-font;
+}
 }
 
-.blog-post-loop .article-body-container {
-    padding: 25px 10px 25px 10px;
-    text-align: right;
+.menu-opener .menu-open-label {
+    letter-spacing: 0;
+    font-size: 15px;
 }
 
-.blog-design-default .article-body-container {
-    margin-right: 0px; 
+.rtl .woocommerce-MyAccount-navigation {
+    float: none;
+    width: unset;
+}
+.mc4wp-form>div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 17px;
+    margin-left: 17px;
+}
+.mc4wp-form-fields {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.woodmart-sidebar-content .widget {
-	background-color: #fff;
+.mc4wp-form>div>p {
+    margin-right: -17px;
+    margin-bottom: 20px!important;
+    margin-left: -17px;
+}
+.mc4wp-form>div>p:first-child {
+    flex: 1 1 200px;
+    max-width: 290px;
+    width: 100%;
 }
 
-.woodmart-entry-content {
-    margin: 15px;
+.title-line-two .product-grid-item .wd-entities-title {
+    max-height: 36px;
+	min-height: 36px;
+}
+.wd-more-desc .wd-more-desc-inner {
+    line-height: 14px;
+	text-align: right;
 }
 
-.comment-list {
-    background-color: #fff;
-    border: 1px solid;
-    border-color: #ddd;
-    padding: 0px 10px 0px 25px;
+.mega-menu-list .sub-sub-menu li a, .menu-mega-dropdown .sub-sub-menu li a {
+    display: block;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 13px;
 }
 
-.woodmart-single-footer .tags-list a {
-	background-color: #ccc;
+.product_title {
+    font-size: 18px;
+	font-weight: 600;
 }
 
-.meta-post-categories {
-	background-color: #89C4F4;
+.comments-area .comment-body ul>li:before, .elementor-text-editor>ol ul>li:before, .elementor-text-editor>ul ul>li:before, .elementor-text-editor>ul>li:before, .entry-content>ol ul>li:before, .entry-content>ul ul>li:before, .entry-content>ul>li:before, .header-banner-container>ol ul>li:before, .header-banner-container>ul ul>li:before, .header-banner-container>ul>li:before, .order-list ul>li:before, .portfolio-single-content>ol ul>li:before, .portfolio-single-content>ul ul>li:before, .portfolio-single-content>ul>li:before, .term-description>ol ul>li:before, .term-description>ul ul>li:before, .term-description>ul>li:before, .textwidget>ol:not(.menu) ul>li:before, .textwidget>ul:not(.menu) ul>li:before, .textwidget>ul:not(.menu)>li:before, .unordered-list ul>li:before, .unordered-list>li:before, .wc-tab-inner>div>ol ul>li:before, .wc-tab-inner>div>ul ul>li:before, .wc-tab-inner>div>ul>li:before, .woocommerce-product-details__short-description>ol ul>li:before, .woocommerce-product-details__short-description>ul ul>li:before, .woocommerce-product-details__short-description>ul>li:before, .woocommerce-terms-and-conditions>ol ul>li:before, .woocommerce-terms-and-conditions>ul ul>li:before, .woocommerce-terms-and-conditions>ul>li:before, .woodmart-entry-content>ol ul>li:before, .woodmart-entry-content>ul ul>li:before, .woodmart-entry-content>ul>li:before, .woodmart-more-desc-inner>ol ul>li:before, .woodmart-more-desc-inner>ul ul>li:before, .woodmart-more-desc-inner>ul>li:before {
+    position: absolute;
+    top: 6px;
+    right: -20px;
+    font-size: 8px;
+    content: "\f114";
+    font-family: woodmart-font;
 }
-
-.woodmart-load-more {
-    color: #f50057;	
-	border-color: #f50057;
+.woodmart-more-desc-inner>ul>li:before {
+    top: 0px;
 }
-
-.woodmart-load-more:hover {
-    color: #000;	
-	border-color: #f50057;
+.wd-more-desc {
+    margin-top: 10px;
 }
-
-.author-info {
-    background-color: #c0e0c3;
+.comments-area .comment-body ul>li, .elementor-text-editor>ol ul>li, .elementor-text-editor>ul ul>li, .elementor-text-editor>ul>li, .entry-content>ol ul>li, .entry-content>ul ul>li, .entry-content>ul>li, .header-banner-container>ol ul>li, .header-banner-container>ul ul>li, .header-banner-container>ul>li, .order-list ul>li, .portfolio-single-content>ol ul>li, .portfolio-single-content>ul ul>li, .portfolio-single-content>ul>li, .term-description>ol ul>li, .term-description>ul ul>li, .term-description>ul>li, .textwidget>ol:not(.menu) ul>li, .textwidget>ul:not(.menu) ul>li, .textwidget>ul:not(.menu)>li, .unordered-list ul>li, .unordered-list>li, .wc-tab-inner>div>ol ul>li, .wc-tab-inner>div>ul ul>li, .wc-tab-inner>div>ul>li, .woocommerce-product-details__short-description>ol ul>li, .woocommerce-product-details__short-description>ul ul>li, .woocommerce-product-details__short-description>ul>li, .woocommerce-terms-and-conditions>ol ul>li, .woocommerce-terms-and-conditions>ul ul>li, .woocommerce-terms-and-conditions>ul>li, .woodmart-entry-content>ol ul>li, .woodmart-entry-content>ul ul>li, .woodmart-entry-content>ul>li, .woodmart-more-desc-inner>ol ul>li, .woodmart-more-desc-inner>ul ul>li, .woodmart-more-desc-inner>ul>li {
+    position: relative;
+    list-style: none;
 }
-
-.comments-area .comment-respond{margin-bottom:30px;background-color: #fff;padding: 20px;border: 1px solid #C9C9C9;border-radius: 10px;}
-li.comment{border-radius: 10px;background-color: #fff; margin-bottom: 15px;padding: 44px;}
-.comment-list{background-color: rgba(255,255,255,0) !important;border:0 !important;border-color:none !important;padding: 0 !important;} 
-div#comments>ol>li{border: 1px solid #C9C9C9;padding-top: 30px;padding-bottom: 30px;}
-.comments-area .comment{padding-top: 13px;padding-bottom: 13px;border-bottom:0;}
-.comments-area .comment-body{padding-right: 65px;padding-left: 25px;}
-.comments-area .children{border-top:0;margin-top: 10px;margin-top: 0px;}    
-div.comment-body{background-color: #fff;padding: 10px;border: 1px solid #C9C9C9;border-radius: 15px;}
-li.comment.depth-1>div.comment-body{background-color: #F1F1F1;}
-.comments-area .comment-author img{ border: 2px solid #C9C9C9;background-color: #fff;top: 13px;right: -34px;}
-p{text-align:justify;}
-div#comments>ol>li.pingback{border: 0;}
-.comments-area .pingback .comment-body{padding: 12px;border-radius: 7px;}
-.comments-area .children .comment:last-child{padding-left: 0px;}
-ol.children>li.comment.parent{padding-left: 0px;margin-bottom: 0px;}
-ol.children>li.comment.odd{padding-left: 0px;margin-bottom:0;padding-bottom: 0px;}
-ol.children>li.comment.even{margin-bottom:0;padding-bottom: 0px;}
-.single-post-navigation{margin-bottom: 39px;background-color: #fff;border-radius: 10px;border: 1px solid #cdcdcd;padding: 25px 10px;}
-.woodmart-single-footer .tags-list a{font-weight: normal;padding-left: 12px;padding-right: 12px;min-width: auto;color: #5f5f5f;background-color: #fff !important;margin-left: 1px;margin-top: 2px;margin-bottom: 2px;border: 1px solid #d4d4d4;font-size: 11px;line-height: 20px;border-radius: 33px;}
-div.tags-list{margin-bottom:25px;}
-.woodmart-single-footer .tags-list a:hover{color: #e5490a;}
-.woodmart-single-footer{display: -webkit-inline-box;}
-.woodmart-single-footer .tags-list a:after{width: 0;height: 0;}
-.related-posts-slider{margin-bottom: 20px;}
-.woodmart-carousel-spacing-20{margin-right: 0px;margin-left: 0px;background-color: #fff;padding: 20px 20px 0px 20px;border: 1px solid #cdcdcd;border-radius: 10px;}
-.blog-design-masonry.blog-style-shadow .article-inner{box-shadow:none;border-radius:5px;}
-.post-img-wrapp{border-top-right-radius: 5px;border-top-left-radius: 5px;}
-.blog-design-masonry.blog-style-shadow .article-body-container{border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
-.woodmart-post-date{color: #e5490a;border-radius: 5px;background-color: rgba(255,255,255,0.8);}
-.woodmart-social-icons{float: left;}
-div.entry-content>div>.woodmart-social-icons::before{content: 'به اشتراک بگذارید';font-size: 14px;padding: 4px 12px;font-weight: 700;border-radius: 30px;vertical-align: -5px;margin-left: 13px;background-color: #dd370809;border: 1px solid #dd3708;color: #dd3708;}
-div.article-inner>.woodmart-entry-meta>.entry-meta-list li a{color: #dd3708;}
-div.article-inner>.woodmart-entry-meta>.entry-meta-list li{color: #dd3708;}
-div.article-inner>.woodmart-entry-meta{border: 1px solid #dd3708;border-radius: 15px;padding: 4px 20px;background-color: #dd370809;}
-footer.entry-author .author-info{margin-bottom: 0px!important;border-bottom-right-radius: 10px !important;border-bottom-left-radius: 10px !important;}
-.woodmart-single-footer{border-top:0px;}
-.article-inner{border-radius: 10px;}
-.author-info .avatar{max-width: 100px !important;border: 3px solid #dd370850 !important;}
-.author-info {background-color: #e5490a10 !important;border: 2px solid !important;border-radius: 10px !important;border-color: #dd370830 !important;}
-.woodmart-sidebar-content .widget{border-radius: 6px;border: 1px solid #dcdcdc;}
-.intban{border-radius: 10px;box-shadow: 10px 10px 10px rgba(0,0,0,.18);}
-article.blog-post-loop>.article-inner{background-color:transparent !important;border:1px solid #e5e5e5 !important;}
-.woodmart-load-more{color: #e5490a !important;border-color: #e5490a !important;border-radius:10px !important;transition: border-radius 0.8s !important;}
-.woodmart-load-more:hover{color: #fff !important;background-color: #e5490a !important;border-radius:0px !important;}
-.intban1{border-radius: 10px !important;box-shadow:10px 10px 10px rgba(0,0,0,.18) !important;transition: all ease-in-out 300ms !important;}
-.intban1:hover{transform: translate(0,-10px) !important;}
-.tg-layout-justified .lome .tg-item-title, .tg-layout-justified .lome .tg-item-title a{font-size: 16px !important;line-height: 30px !important;}
-.tg-layout-justified .lome .tg-item-date{display: none;}    
-.tg-item .tg-center-holder{top: 87%;}
-.lome .tg-center-holder{text-align: right !important;}
-.side1{background-color:#fff;padding:10px 15px;border:1px solid #dcdcdc;border-radius:5px;}
-.widget-title{background: rgba(125, 125, 125, 0.15);padding: 10px 20px;}
-div#categories-11{max-width:100% !important;padding-right: 0px;padding-left:0px;}
-.cute-article .post-date {display: none;}
-.cute-article .entry-meta {display: none;}
-.cute-article .hovered-social-icons {display: none;}
-.cute-article .article-body-container {height: 100%;display: flex;flex-direction: column-reverse;background-color: rgb(0,0,0,0.2) !important;}
-.slider-type-post{margin-bottom: 5px !important;}
-div.slide-post.owl-carousel-item>article>div.article-inner>div>h3>a{padding-top:0px;padding-bottom: 43px !important;}
-div.link1>div>div>div>div>div.owl-stage-outer>div.owl-stage>div>div.slide-post.owl-carousel-item>article>div.article-inner>div>h3>a{padding-top:150px !important;padding-bottom: 30px !important;}
-div.slide-post.owl-carousel-item>article>div.article-inner>div>h3{margin-bottom: -34px !important;}
-article.blog-design-small-images>div.article-inner{border: 0 !important;}
-article.blog-design-small-images>div.article-inner>header>figure>div>a>img{height: 286px;}
-article.blog-design-small-images>div.article-inner>div.article-body-container>h3{font-size: 14px !important;line-height: 26px;}
-article.blog-design-small-images>div.article-inner>div.article-body-container{height: 282px;}
-.article-inner {border: 1px solid;border-color: #ddd;background: #fff;border-radius: 10px;}
-.woodmart-sidebar-content .widget{background-color: #fff;padding: 20px;box-shadow: 0 1px 1px 1px #e6e6e6;}
-.woodmart-entry-content{margin: 15px;}
-.comments-area .comment-body{word-break: break-word;}
-
-.mihanpanel-profile-widget .mp-nav-tabs-mpwrapper .mp-nav-tabs li a i {float: right;font-size: 1.5em;padding-left: 15px;}
-.mihanpanelpanel .mpsidebar .nav i {float: right;margin-left: 15px;}
-
-
-
-/* Extra styles */
-.woodmart-single-footer .single-post-social{
-	flex: none;
-}
-
-/* improve fonts ui */
-.post.blog-post-loop .entry-title {
-	font-weight: 700;
-	font-size: 1.3em;
-	line-height: 35px;
-	color: #363636;
-}
-.post-single-page .entry-title {
-	font-weight: 700;
-	font-size: 1.5em;
-	line-height: 2;
-	color: #363636;
-}
-.post-single-page .entry-content {
-	margin-bottom: 60px;
-	color: #212121;
-	line-height: 2;
-	font-size: 1.1rem;
-}
-blog-design-default .woodmart-entry-content {
-	color: #858585;
-	line-height: 1.8;
-	font-size: 0.9em;
-}
-@media screen and (max-width: 768px) {
-	.post-single-page .entry-content {
-		margin-bottom: 60px;
-		color: #212121;
-		line-height: 1.8;
-		font-size: 1rem;
-	}
-}
-@media screen and (max-width: 575px) {
-	.post-single-page .entry-title {
-		font-size: 1.2em;
-		line-height: 2.5rem;
-	}
-}
-/* improve fonts ui */

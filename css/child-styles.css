@@ -7,13 +7,90 @@ html{
     line-height: 2;
 }
 
+ul.entry-meta-list {
+    padding: 0;
+}
+ul.entry-meta-list li{
+    list-style-type:none;
+    font-family: iranyekan, sans-serif, Arial, Helvetica, sans-serif ;
+    margin: 8px auto;
+    display: inline;
+}
 .post-date.woodmart-post-date {
-    min-width: 53px;
-    height: auto;
-    color: #e5490a;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,.8);
-    opacity: 0.9;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    display: inline-block;
+    min-width: 54px;
+    height: 54px;
+    background-color: #FFF;
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    color: #333;
+    text-align: center;
+    line-height: 1;
+}
+.woodmart-post-date .post-date-day {
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-size: 24px;
+    display: block;
+
+}
+.wd-post-date .post-date-month {
+    padding-top: 2px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.article-body-container{
+    position:relative;
+}
+
+.meta-categories-wrapp {
+
+    left: 15px;
+    overflow: hidden;
+    height: 25px;
+    line-height: 25px;
+}
+.meta-post-categories {
+    background-color: #89C4F4;
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 25px;
+    color: #FFF;
+    line-height: 25px;
+}
+.meta-post-categories a{
+
+    color: #FFF;
+}
+
+.post-single-page .article-inner .meta-post-categories {
+    width: 100%;
+    text-align: center;
+}
+.post-single-page .article-inner .wd-entities-title , .post-single-page .article-inner .entry-title  {
+    text-align: center;
+}
+.post-single-page .article-inner .entry-meta-list {
+    text-align: center;
+}
+.article-inner .entry-header{
+    position: relative;
+}
+.entry-meta.wd-entry-meta{
+    width: 100%;
+}
+
+article.blog-post-loop>.article-inner {
+    margin: 36px auto;
 }
 
 .alert.alert-danger {
@@ -256,6 +333,13 @@ ul.pagination {
 .planet_right{
     width: 90%;
 }
+.planet_right .entry-meta-list{
+    padding: 0;
+}
+.planet_right span.meta-date{
+    display: inline-table;
+    direction: rtl;
+}
 
 .planet_left a{
     text-align: center;
@@ -276,11 +360,6 @@ h3.planet-title {
 
 h3.planet-title a:hover{
     color: #e5490a;
-}
-
-.entry-meta-list{
-    font-family: iranyekan, sans-serif, Arial, Helvetica, sans-serif ;
-    margin: 8px auto;
 }
 
 .meta-link a{
@@ -403,6 +482,7 @@ h1.entry-title{
 
 .hovered-social-icons{
     vertical-align: top;
+    display: none;
 }
 
 .hovered-social-icons::after {
@@ -505,7 +585,7 @@ h1.entry-title{
 }
 
 .social-right{
-    width: 60%;
+    width: 100%;
     margin: 6px auto;
 }
 .social-left{

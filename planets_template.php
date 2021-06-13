@@ -188,16 +188,6 @@ $category = new WP_Query($args);
 					<span><?php echo get_comments_number(); ?></span>
 				</a>
 
-				<div class="hovered-social-icons">
-					<div class="woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">
-						<a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-facebook"> <i class="fa fa-facebook"></i> <span class="woodmart-social-icon-name">Facebook</span></a>
-						<a rel="nofollow" href="https://twitter.com/share?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-twitter"> <i class="fa fa-twitter"></i> <span class="woodmart-social-icon-name">Twitter</span> </a>
-						<a rel="nofollow" href="mailto:?subject=Check%20this%20<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-email"> <i class="fa fa-envelope"></i> <span class="woodmart-social-icon-name">Email</span> </a>
-						<a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-linkedin"> <i class="fa fa-linkedin"></i> <span class="woodmart-social-icon-name">linkedin</span> </a>
-						<a rel="nofollow" href="https://wa.me/?text=<?php esc_url(the_permalink()); ?>" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp"> <i class="fa fa-whatsapp"></i> <span class="woodmart-social-icon-name">WhatsApp</span> </a>
-						<a rel="nofollow" href="https://telegram.me/share/url?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-tg"> <i class="fa fa-telegram"></i> <span class="woodmart-social-icon-name">Telegram</span> </a>
-					</div>
-				</div>
 			</div>
 
 			<div class="planet_right">

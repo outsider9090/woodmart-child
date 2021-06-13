@@ -52,14 +52,14 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
 					}
 					?>
                     <h1 class="entry-title"><?php the_title( '', '', true ); ?></h1>
-                    <div class="entry-meta woodmart-entry-meta">
+                    <div class="entry-meta wd-entry-meta">
                         <ul class="entry-meta-list">
                             <li class="meta-author"> ارسال توسط
 								<?php echo get_avatar(get_the_author_meta('ID')); ?>
                                 <a href="<?php echo get_site_url().'/author/'.get_the_author_meta( 'user_login' ); ?>" rel="author">
-         <span class="vcard author author_name">
-             <span class="fn"><?php get_the_author_meta( '',the_author() ); ?></span>
-         </span>
+                                     <span class="vcard author author_name">
+                                         <span class="fn"><?php get_the_author_meta( '',the_author() ); ?></span>
+                                     </span>
                                 </a>
                             </li>
                         </ul>
@@ -155,35 +155,6 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
 										?>
 
                                     </div>
-                                    <div class="social-left">
-                                        <div class="woodmart-social-icons icons-design-default icons-size-default color-scheme-dark social-share social-form-circle">
-                                            <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-facebook">
-                                                <i class="fa fa-facebook"></i>
-                                                <span class="woodmart-social-icon-name">Facebook</span>
-                                            </a>
-                                            <a rel="nofollow" href="https://twitter.com/share?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-twitter">
-                                                <i class="fa fa-twitter"></i>
-                                                <span class="woodmart-social-icon-name">Twitter</span>
-                                            </a>
-                                            <a rel="nofollow" href="mailto:?subject=Check%20this%20<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-email">
-                                                <i class="fa fa-envelope"></i>
-                                                <span class="woodmart-social-icon-name">Email</span>
-                                            </a>
-
-                                            <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-linkedin">
-                                                <i class="fa fa-linkedin"></i>
-                                                <span class="woodmart-social-icon-name">linkedin</span>
-                                            </a>
-                                            <a rel="nofollow" href="https://wa.me/?text=<?php esc_url(the_permalink()); ?>" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp">
-                                                <i class="fa fa-whatsapp"></i>
-                                                <span class="woodmart-social-icon-name">WhatsApp</span>
-                                            </a>
-                                            <a rel="nofollow" href="https://telegram.me/share/url?url=<?php esc_url(the_permalink()); ?>" target="_blank" class=" woodmart-social-icon social-tg">
-                                                <i class="fa fa-telegram"></i>
-                                                <span class="woodmart-social-icon-name">Telegram</span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
@@ -204,6 +175,13 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
                 <div class="post-share-container">
                     <div class="woodmart-single-footer" style="width: 100%;">
                         <div class="post-share">
+	                        <?php if ( woodmart_get_opt( 'blog_share' ) && woodmart_is_social_link_enable( 'share' ) ): ?>
+                                <div class="single-post-social">
+			                        <?php if( function_exists( 'woodmart_shortcode_social' ) ) echo woodmart_shortcode_social(
+				                        array('type' => 'share', 'tooltip' => 'no', 'style' => 'colored', 'page_link' => wp_get_shortlink( 0, 'post', true )))
+			                        ?>
+                                </div>
+	                        <?php endif ?>
                             <div data-action="copy" class="shorturl-input">
                                 <a onclick="myFunction()" class="woodmart-tooltip" data-original-title="لینک کوتاه" title="لینک کوتاه" style="cursor: pointer;" >
                                     <span class="shortUrl-text"><?php echo  wp_get_shortlink( 0, 'post', true ); ?></span>

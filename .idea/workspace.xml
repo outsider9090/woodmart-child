@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="improved scroll-bar functionality and ...">
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/home_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/planets_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/planets_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planets_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/planets_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-zplanet.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-zplanet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,19 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4920">
-              <caret line="207" selection-start-line="207" selection-end-line="207" />
+            <state relative-caret-position="168">
+              <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
               <folding>
                 <element signature="n#planet_list#0;n#!!top" />
               </folding>
@@ -37,10 +34,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/planets_template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="186" column="51" lean-forward="true" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+              <folding>
+                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/planets_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="209" column="34" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="45" column="89" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="89" />
+            <state relative-caret-position="82">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single-zplanet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
             </state>
           </provider>
         </entry>
@@ -48,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home_template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
+            <state relative-caret-position="209">
+              <caret line="313" column="40" lean-forward="true" selection-start-line="313" selection-start-column="40" selection-end-line="322" selection-end-column="46" />
               <folding>
                 <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
               </folding>
@@ -60,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/child-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="249">
+              <caret line="481" lean-forward="true" selection-start-line="481" selection-end-line="481" />
             </state>
           </provider>
         </entry>
@@ -69,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="377">
+              <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
               <folding>
                 <element signature="e#2619#5007#0" />
               </folding>
@@ -89,19 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file-pass-msg</find>
-      <find>small span</find>
-      <find>vazir</find>
-      <find>slug</find>
-      <find>selTxt</find>
-      <find>حمایت از سیسوگ</find>
-      <find>article-content</find>
-      <find>scrollTop</find>
-      <find>&lt;art</find>
-      <find>scroll</find>
-      <find>j/M/Y</find>
-      <find>like</find>
-      <find>re</find>
       <find>font-family</find>
       <find>getItem</find>
       <find>modal_container</find>
@@ -113,12 +127,25 @@
       <find>jalali</find>
       <find>jDate</find>
       <find>WHERE</find>
-      <find>telegramJoin</find>
       <find>author</find>
-      <find>entry-meta-list</find>
       <find>.pagination li</find>
       <find>parent</find>
       <find>post-date</find>
+      <find>planet_left</find>
+      <find>entry-meta woodmart-entry-meta</find>
+      <find>wd-social-icons</find>
+      <find>telegramJoin</find>
+      <find>&lt;?php echo ' - '; ?&gt;</find>
+      <find>entry-meta-list</find>
+      <find>post-share</find>
+      <find>arrow_box</find>
+      <find>tooltip</find>
+      <find>.wd-social-icons</find>
+      <find>ul.entry-meta-list</find>
+      <find>social-left</find>
+      <find>planet_right</find>
+      <find>article.blog-post-loop&gt;.article-inner</find>
+      <find>hovered-social-icons</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -176,24 +203,24 @@
         <option value="$PROJECT_DIR$/planet-archive.php" />
         <option value="$PROJECT_DIR$/archive.php" />
         <option value="$PROJECT_DIR$/js/post-like.js" />
-        <option value="$PROJECT_DIR$/includes/planets_list.php" />
-        <option value="$PROJECT_DIR$/rtl.css" />
-        <option value="$PROJECT_DIR$/planets_template.php" />
         <option value="$PROJECT_DIR$/timeline_template.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/sidebar-new.php" />
         <option value="$PROJECT_DIR$/taxonomy-zcategory.php" />
         <option value="$PROJECT_DIR$/sidebar-planet.php" />
-        <option value="$PROJECT_DIR$/single-zplanet.php" />
         <option value="$PROJECT_DIR$/css/modal-notify.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/js/child-scripts.js" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/single.php" />
-        <option value="$PROJECT_DIR$/home_template.php" />
+        <option value="$PROJECT_DIR$/planets_template.php" />
+        <option value="$PROJECT_DIR$/includes/planets_list.php" />
+        <option value="$PROJECT_DIR$/single-zplanet.php" />
+        <option value="$PROJECT_DIR$/rtl.css" />
         <option value="$PROJECT_DIR$/css/child-styles.css" />
+        <option value="$PROJECT_DIR$/home_template.php" />
       </list>
     </option>
   </component>
@@ -210,7 +237,27 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,11 +271,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\css" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images\timeline" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -345,7 +392,9 @@
       <workItem from="1622613870510" duration="3524000" />
       <workItem from="1623234263160" duration="1229000" />
       <workItem from="1623237454343" duration="3321000" />
-      <workItem from="1623308292365" duration="22000" />
+      <workItem from="1623308292365" duration="1431000" />
+      <workItem from="1623472203917" duration="10593000" />
+      <workItem from="1623565565352" duration="13239000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -407,13 +456,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451167000" />
+    <option name="totallyTimeSpent" value="476408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -534,13 +583,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/clipboard.min.js" />
     <entry file="file://$PROJECT_DIR$/js/clipboard.js" />
-    <entry file="file://$PROJECT_DIR$/includes/planets_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2486">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timeline_template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -573,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="439" column="10" selection-start-line="439" selection-start-column="10" selection-end-line="439" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planet-archive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -587,13 +622,6 @@
           <folding>
             <element signature="e#6#42#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planets_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -620,13 +648,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/modal-notify.css" />
-    <entry file="file://$PROJECT_DIR$/single-zplanet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="154" column="42" selection-start-line="154" selection-start-column="42" selection-end-line="154" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/isee-logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -654,51 +675,85 @@
     <entry file="file://$PROJECT_DIR$/ultimate-member/email/checkmail_email.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
+        <state relative-caret-position="588">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4920">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
-          <folding>
-            <element signature="n#planet_list#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="45" column="89" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="377">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
           <folding>
             <element signature="e#2619#5007#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+          <folding>
+            <element signature="n#planet_list#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planets_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="186" column="51" lean-forward="true" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
+          <folding>
+            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/planets_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="209" column="34" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single-zplanet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="376" column="1" selection-start-line="376" selection-start-column="1" selection-end-line="376" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/child-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="249">
+          <caret line="481" lean-forward="true" selection-start-line="481" selection-end-line="481" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home_template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
+        <state relative-caret-position="209">
+          <caret line="313" column="40" lean-forward="true" selection-start-line="313" selection-start-column="40" selection-end-line="322" selection-end-column="46" />
           <folding>
             <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
           </folding>
