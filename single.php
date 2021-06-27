@@ -5,10 +5,8 @@ get_header(); ?>
 <?php
 // Get content width and sidebar position
 $content_class = woodmart_get_content_class();
+require get_stylesheet_directory() . '/env.php';
 ?>
-
-
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 
 <div class="site-content <?php echo esc_attr( $content_class ); ?>" role="main">
@@ -43,7 +41,7 @@ $content_class = woodmart_get_content_class();
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 support">
-                            <a href="http://localhost/wordpress/test-zarin?transaction_id=<?= $post->post_author; ?>&user_name=<?= get_the_author_meta('display_name', $post->post_author); ?>"  >
+                            <a href="<?= get_site_url() . "/" . getenv('DONATE_PAGE_SLUG'); ?> ?transaction_id=<?= $post->post_author; ?>&user_name=<?= get_the_author_meta('display_name', $post->post_author); ?>"  >
                             حمایت از سیسوگ
                             <img src="<?php echo get_stylesheet_directory_uri().'/images/support.png'; ?>" alt="حمایت از سیسوگ">
                         </a>
