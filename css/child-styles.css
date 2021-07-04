@@ -131,16 +131,22 @@ ul.pagination {
     border: 2px solid #e5490a;
     height: 40px;
     line-height: 36px;
-    border-radius: 6px;
+    border-radius: 3px;
     list-style-type: none;
 }
 
-
 .pagination li a{
-    padding: 12px;
+    padding: 8px 12px;
     color: #e5490a;
     font-weight: bold;
     font-size: 16px;
+    background: transparent;
+    border: none;
+}
+.pagination li a:hover{
+    color: #eeeeee;
+    background: transparent;
+    border: none;
 }
 
 .pagination li:hover{
@@ -158,6 +164,7 @@ ul.pagination {
 
 .pagination li.active a{
     color: #eeeeee;
+    background-color:#e5490a !important;
     font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
 }
 
@@ -990,8 +997,8 @@ form input{
 }
 .modal_body button{
     position: absolute;
-    left: 0;
-    top: 4px;
+    left: 8px;
+    top: 16px;
     background-color: transparent;
     color: #757575;
     font-size: 1.5em;

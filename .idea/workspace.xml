@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0f88802-8573-4d96-bb6e-af59e9d8cb47" name="Default Changelist" comment="improved scroll-bar functionality and ...">
+      <change afterPath="$PROJECT_DIR$/fonts/vazir-fd/Vazir-Regular-FD.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/vazir-fd/Vazir-Regular-FD.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/vazir-fd/Vazir-Regular-FD.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/vazir-fd/Vazir-Regular-FD.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/child-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/child-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,41 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="168">
+              <caret line="43" selection-start-line="43" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rtl.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/child-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="1064" column="1" selection-start-line="1064" selection-start-column="1" selection-end-line="1064" selection-end-column="1" />
-              <folding>
-                <element signature="e#19805#20257#0" />
-                <element signature="e#20259#20696#0" />
-                <element signature="e#20698#21181#0" />
-                <element signature="e#21183#22101#0" />
-                <element signature="e#22103#23597#0" />
-                <element signature="e#23599#24459#0" />
-                <element signature="e#24461#26455#0" />
-                <element signature="e#26457#27935#0" />
-                <element signature="e#27937#29897#0" />
-                <element signature="e#29899#30246#0" />
-              </folding>
+            <state relative-caret-position="23760">
+              <caret line="990" column="19" selection-start-line="990" selection-start-column="19" selection-end-line="990" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -56,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1008">
-              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="e#2619#5007#0" />
               </folding>
@@ -75,11 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-family</find>
-      <find>getItem</find>
-      <find>modal_container</find>
-      <find>scroll-bar</find>
-      <find>400</find>
       <find>400px</find>
       <find>$wpdb-&gt;insert</find>
       <find>post_like_table</find>
@@ -105,6 +94,11 @@
       <find>planet_right</find>
       <find>article.blog-post-loop&gt;.article-inner</find>
       <find>hovered-social-icons</find>
+      <find>authors_list_table</find>
+      <find>page-link</find>
+      <find>$row-&gt;Name</find>
+      <find>DONATE_PAGE_SLUG</find>
+      <find>.modal_body button</find>
     </findStrings>
     <replaceStrings>
       <replace>esc_url(the_permalink());</replace>
@@ -134,6 +128,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child</dir>
+      <dir>C:\xampp\htdocs\wp2\wp-content\themes\woodmart-child</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -176,13 +171,13 @@
         <option value="$PROJECT_DIR$/planets_template.php" />
         <option value="$PROJECT_DIR$/includes/planets_list.php" />
         <option value="$PROJECT_DIR$/single-zplanet.php" />
-        <option value="$PROJECT_DIR$/rtl.css" />
         <option value="$PROJECT_DIR$/home_template.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/env.example.php" />
         <option value="$PROJECT_DIR$/env.php" />
-        <option value="$PROJECT_DIR$/single.php" />
+        <option value="$PROJECT_DIR$/rtl.css" />
         <option value="$PROJECT_DIR$/css/child-styles.css" />
+        <option value="$PROJECT_DIR$/single.php" />
       </list>
     </option>
   </component>
@@ -198,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,11 +206,26 @@
               <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="vazir-fd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woodmart-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woodmart-child" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,11 +239,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wp2\wp-content\themes\woodmart-child\fonts\vazir-fd" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\css" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\woodmart-child\images\timeline" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -355,7 +366,9 @@
       <workItem from="1624769865609" duration="165000" />
       <workItem from="1624770446027" duration="3669000" />
       <workItem from="1624776147063" duration="5775000" />
-      <workItem from="1625121480437" duration="864000" />
+      <workItem from="1625121480437" duration="1028000" />
+      <workItem from="1625372407615" duration="6291000" />
+      <workItem from="1625395046146" duration="1675000" />
     </task>
     <task id="LOCAL-00001" summary="Added post-share to single.php">
       <created>1588108366771</created>
@@ -417,13 +430,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487053000" />
+    <option name="totallyTimeSpent" value="495183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -435,8 +448,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.25893825" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.2426869" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -645,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="376" column="1" selection-start-line="376" selection-start-column="1" selection-end-line="376" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home_template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="827">
@@ -712,43 +718,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/env.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="43" selection-start-line="43" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23760">
+          <caret line="990" column="19" selection-start-line="990" selection-start-column="19" selection-end-line="990" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/child-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
-          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="e#2619#5007#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/child-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="1064" column="1" selection-start-line="1064" selection-start-column="1" selection-end-line="1064" selection-end-column="1" />
-          <folding>
-            <element signature="e#19805#20257#0" />
-            <element signature="e#20259#20696#0" />
-            <element signature="e#20698#21181#0" />
-            <element signature="e#21183#22101#0" />
-            <element signature="e#22103#23597#0" />
-            <element signature="e#23599#24459#0" />
-            <element signature="e#24461#26455#0" />
-            <element signature="e#26457#27935#0" />
-            <element signature="e#27937#29897#0" />
-            <element signature="e#29899#30246#0" />
           </folding>
         </state>
       </provider>
