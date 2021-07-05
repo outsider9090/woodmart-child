@@ -154,7 +154,7 @@ get_header(); ?>
                                         <figure class="bigImage">
 											<?php echo get_the_post_thumbnail( $ids[0], '' , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[0], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[0], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[0] ); ?></h4>
                                         </a>
                                     </div>
@@ -162,7 +162,7 @@ get_header(); ?>
                                         <figure class="smallImage">
 											<?php echo get_the_post_thumbnail( $ids[1], array(384,170) , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[1], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[1], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[1] ); ?></h4>
                                         </a>
                                     </div>
@@ -170,7 +170,7 @@ get_header(); ?>
                                         <figure class="smallImage">
 											<?php echo get_the_post_thumbnail( $ids[2], array(384,170) , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[2], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[2], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[2] ); ?></h4>
                                         </a>
                                     </div>
@@ -183,7 +183,7 @@ get_header(); ?>
                                         <figure class="smallImage">
 											<?php echo get_the_post_thumbnail( $ids[3], array(384,170) , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[3], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[3], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[3] ); ?></h4>
                                         </a>
                                     </div>
@@ -191,7 +191,7 @@ get_header(); ?>
                                         <figure class="smallImage">
 											<?php echo get_the_post_thumbnail( $ids[4], array(384,170) , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[4], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[4], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[4] ); ?></h4>
                                         </a>
                                     </div>
@@ -199,7 +199,7 @@ get_header(); ?>
                                         <figure class="smallImage">
 											<?php echo get_the_post_thumbnail( $ids[5], array(384,170) , '' ); ?>
                                         </figure>
-                                        <a href="<?php echo get_the_permalink( $ids[5], false ); ?>" class="post_link" target="_blank">
+                                        <a href="<?php echo get_the_permalink( $ids[5], false ); ?>" class="post_link">
                                             <h4 class="post_title"><?php echo get_the_title( $ids[5] ); ?></h4>
                                         </a>
                                     </div>

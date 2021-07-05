@@ -347,7 +347,9 @@ ul.pagination {
     display: inline-table;
     direction: rtl;
 }
-
+.planet_right .entry-header{
+    text-align: right;
+}
 .planet_left a{
     text-align: center;
 }
