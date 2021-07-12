@@ -41,7 +41,7 @@ require get_stylesheet_directory() . '/env.php';
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 support">
-                            <a href="<?= get_site_url() . "/" . getenv('DONATE_PAGE_SLUG'); ?>?transaction_id=<?= $post->post_author; ?>&user_name=<?= get_the_author_meta('display_name', $post->post_author); ?>"  >
+                            <a href="<?= get_site_url() . "/" . getenv('DONATE_PAGE_SLUG'); ?>?tid=<?= $post->post_author; ?>&uname=<?= get_the_author_meta('display_name', $post->post_author); ?>&pid=<?= $post->ID ?>"  >
                             حمایت از سیسوگ
                             <img src="<?php echo get_stylesheet_directory_uri().'/images/support.png'; ?>" alt="حمایت از سیسوگ">
                         </a>

@@ -10,8 +10,6 @@ $posts_per_page = 5; // تعداد پست های صفحه اصلی
 /* Variables */
 
 
-
-
 add_filter( 'excerpt_length', function( $content ) use ($excerptLength) {return $excerptLength;}, 999); //based words count
 add_filter('excerpt_more', function (){return '  ...';});
 
