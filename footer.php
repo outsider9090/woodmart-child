@@ -53,7 +53,40 @@
 			</div>
 		<?php endif ?>
 
-	</footer>
+
+        <!--  start Show author_donations link -->
+		<?php
+		if (is_user_logged_in()){
+			$user_id = get_current_user_id();
+			$user = get_userdata($user_id);
+
+			$allowed_roles = array('editor', 'administrator', 'author');
+		if( array_intersect($allowed_roles, $user->roles ) ) {
+			?>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    $('.wd-sub-menu.sub-menu').append('<li id="menu-item-999999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-999999 item-level-1"><a href="https://sisoog.com/author_donations/" class="woodmart-nav-link">حمایت های انجام شده از شما</a></li>');
+                })
+            </script>
+		<?php
+		}
+		} else {
+		?>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    const elm = $('#menu-item-999999');
+                    if(elm == null){
+                        $('.wd-sub-menu.sub-menu').remove('<li id="menu-item-999999"</li>');
+                    }
+                })
+            </script>
+			<?php
+		}
+		?>
+        <!--  start Show author_donations link -->
+
+
+    </footer>
 
 
     <!-- Notify Modal -->

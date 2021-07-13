@@ -197,7 +197,7 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 support">
-                            <a href="https://sisoog.com/%DA%A9%D9%85%DA%A9-%D8%A8%D9%87-%D8%B3%DB%8C%D8%B3%D9%88%DA%AF/">
+                            <a href="https://www.payping.ir/sisoog">
                                 حمایت از سیسوگ
                                 <img src="<?php echo get_stylesheet_directory_uri().'/images/support.png'; ?>" alt="حمایت از سیسوگ">
                             </a>
