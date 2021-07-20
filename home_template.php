@@ -1,12 +1,13 @@
 <?php /* Template Name: Home */
 
+require_once plugin_dir_path( __FILE__ ) . 'env.php';
 
 /* Variables */
-$excerptLength = 45;         // طول خلاصه مطلب
-$Grid_catID = 8562;       // آیدی دسته بندی گریدویو    8562
-$Posts_catID = 209; // آیدی دسته بندی پست ها    209
+$excerptLength = getenv('HOME_EXCERPT_LENGTH');
+$Grid_catID = getenv('HOME_GRID_CAT_ID');
+$Posts_catID = getenv('HOME_POSTS_CAT_ID');
+$posts_per_page = getenv('HOME_POSTS_PER_PAGE');
 $paged_type = 'page';       // "page" in local AND "paged" in Host
-$posts_per_page = 5; // تعداد پست های صفحه اصلی
 /* Variables */
 
 
@@ -112,8 +113,8 @@ function wp_bootstrap4_pagination( $args = array() , $cat_id, $paged_type , $pos
 
 get_header(); ?>
 
-
 <!-- Content -->
+
 <div class="vc_row wpb_row vc_row-fluid ">
     <div class="wpb_column cute-article ">
         <div class="vc_column-inner ">
@@ -213,7 +214,6 @@ get_header(); ?>
     </div>
 </div>
 
-
 <!--Posts-->
 <div class="wpb_column vc_column_container vc_col-sm-9" role="main">
     <div class="vc_column-inner">
@@ -309,16 +309,16 @@ get_header(); ?>
                                         </ul>
                                     </div>
 
-<!--                                    <div class="hovered-social-icons">-->
-<!--                                        <div class="wd-social-icons woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" wd-social-icon social-facebook"> <span class="wd-icon"></span></a>-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="https://twitter.com/share?url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-twitter"> <span class="wd-icon"></span> </a>-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="mailto:?subject=Check%20this%20--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-email"> <span class="wd-icon"></span> </a>-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-linkedin"> <span class="wd-icon"></span> </a>-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="https://wa.me/?text=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp"> <span class="wd-icon"></span> </a>-->
-<!--                                            <a rel="noopener noreferrer nofollow" href="https://telegram.me/share/url?url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-tg"> <span class="wd-icon"></span> </a>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
+                                    <!--                                    <div class="hovered-social-icons">-->
+                                    <!--                                        <div class="wd-social-icons woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" wd-social-icon social-facebook"> <span class="wd-icon"></span></a>-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="https://twitter.com/share?url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-twitter"> <span class="wd-icon"></span> </a>-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="mailto:?subject=Check%20this%20--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-email"> <span class="wd-icon"></span> </a>-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-linkedin"> <span class="wd-icon"></span> </a>-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="https://wa.me/?text=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class="whatsapp-desktop woodmart-social-icon social-whatsapp"> <span class="wd-icon"></span> </a>-->
+                                    <!--                                            <a rel="noopener noreferrer nofollow" href="https://telegram.me/share/url?url=--><?php //esc_url(the_permalink()); ?><!--" target="_blank" class=" woodmart-social-icon social-tg"> <span class="wd-icon"></span> </a>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </div>-->
 
                                     <div class="entry-content woodmart-entry-content">
 										<?php the_excerpt(); ?>
@@ -356,8 +356,8 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<!-- Content -->
 
+<!-- Content -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -2,6 +2,9 @@
 /**
  * The Header template for our theme
  */
+
+global $my_custom_title;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -11,6 +14,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
 
+    <?php if ($my_custom_title !== null){echo "<title>".$my_custom_title."</title>";} ?>
 	<?php wp_head(); ?>
 </head>
 
@@ -32,14 +36,11 @@
 
                 <?php whb_generate_header(); ?>
 
-                <strong>place2</strong>
 
                 <div class="progress" id="scroll-bar">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
-
-                <strong>place3</strong>
 
 			</header><!--END MAIN HEADER-->
 			
